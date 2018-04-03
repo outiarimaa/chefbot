@@ -53,11 +53,9 @@ class App extends Component {
   }
 
   render() {
-    console.log('katotaan sisään', this.state.user);
     return (
       <div>
           <div>
-            <h3>Testi</h3>
             {this.state.user ?
               <div>
                 <button onClick={this.logout}>Logout</button>
