@@ -9,11 +9,11 @@ class App extends Component {
       <div>
         <Header />
         <div>
-          <iframe
-            width="40%"
-            height="600px"
-            src="https://console.dialogflow.com/api-client/demo/embedded/52606f9c-781f-4d50-8fc0-b990b7cc48f9">
-         </iframe>
+         <iframe
+          width="350"
+          height="430"
+          src="https://console.dialogflow.com/api-client/demo/embedded/69d0c8a7-3ee8-444a-afb5-a514fb6a3bf1">
+          </iframe>
         </div>
       </div>
     );
