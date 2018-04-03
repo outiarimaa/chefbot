@@ -5,6 +5,7 @@
   "proxy": "https://banana-pie-98012.herokuapp.com/",
   "dependencies": {
     "axios": "^0.18.0",
+    "firebase": "^4.12.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1"
