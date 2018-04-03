@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # dependencies
@@ -20,9 +19,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-=======
+
 .idea
+.idea/
 .iml
 chefbot/out
 chefbot/target
->>>>>>> 0049bdbe3660fdf8e41e8ee181683b8c0ddcb6ae
