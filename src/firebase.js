@@ -8,7 +8,12 @@
     storageBucket: "chefbot-e4503.appspot.com",
     messagingSenderId: "606038427583"
   };
+
   firebase.initializeApp(config);
   export const googleProvider = new firebase.auth.GoogleAuthProvider();
+  export const facebookProvider = new firebase.auth.FacebookAuthProvider();
   export const auth = firebase.auth();
   export default firebase;
+
+
+
