@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(241, 209, 255);
+}
+
+.boksi{
+    background-color: rgb(241, 255, 122);
+    border: 1px solid rgb(229, 229, 16);
+    padding: 20px;
+    margin: 30px 20%;
+    width: 50vw;
+}
+
+.formi {
+    margin-bottom: 15px;
+}
+
+.formi input, button{
+    margin-right: 10px;
+}
+
+.recipeDiv {
+    border: 1px solid white;
+    margin-bottom: 50px;
+    padding: 14px;
+    background-color: rgb(224, 235, 235);
+}
+
+.recipeImage {
+    width: 80%;
+}
+
+.nameLabel {
+    margin-right: 41px;
+}
+
+.recipeLabel {
+    margin-right: 10px;
+}
