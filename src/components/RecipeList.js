@@ -51,7 +51,8 @@ export default class RecipeList extends React.Component {
 
 
     render() {
-        let lista = this.state.recipes.map(r => <div>{r.title}</div>)
+        console.log('mapataantaa', this.state.recipes);
+        let lista = this.state.recipes.map(r => <div key={r.title}>{r.title}</div>)
 
         let hakutulos = this.state.recipesToShow.map(r =>
             <div className={'recipeDiv'}>
@@ -63,7 +64,7 @@ export default class RecipeList extends React.Component {
                 </ul>
                 <div>
                     {r.analyzedInstructions[0].steps.map(steppi =>
-                        <div>
+                        <div key={steppi.step}>
                             {steppi.step}
                             <br/><br/>
                         </div>
