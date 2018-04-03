@@ -62,15 +62,16 @@ class App extends Component {
               <div>
                 <button onClick={this.logout}>Logout</button>
                 <p>Heippatirallaa {this.state.user.displayName}</p>
+                <RecipeList/>
               </div>
               :
               <div>
                 <button onClick={this.loginGoogle}>Login with Google</button>
                 <button onClick={this.loginFacebook}>Login with Facebook</button>
+                <p>Loggaa sisään, niin näätki jotain</p>
               </div>
             }
           </div>
-          <RecipeList/>
       </div>
     );
   }
