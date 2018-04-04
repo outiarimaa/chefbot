@@ -58,6 +58,9 @@ class Header extends Component {
                   <button onClick={this.logout}>Logout</button>
                   <p>Heippatirallaa {this.state.user.displayName}</p>
                   <RecipeList />
+                  <div>
+                    <iframe src='http://localhost:2100/apichat.html' height="700px" width="800px"></iframe>
+                  </div>
                 </div>
                 :
                 <div>
