@@ -59,7 +59,13 @@ class Header extends Component {
                   <p>Heippatirallaa {this.state.user.displayName}</p>
                   <RecipeList />
                   <div>
-                    <iframe src='http://localhost:2100/apichat.html' height="700px" width="800px"></iframe>
+                  <div className="Chefbot-div">
+                    <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://console.dialogflow.com/api-client/demo/embedded/69d0c8a7-3ee8-444a-afb5-a514fb6a3bf1">
+                    </iframe>
+                  </div>
                   </div>
                 </div>
                 :
