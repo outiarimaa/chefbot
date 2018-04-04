@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import RecipeList from "./RecipeList";
 import { auth, googleProvider, facebookProvider } from '../firebase.js';
 import '../App.css';
+import { Row, Col } from 'react-materialize'
 
 class Header extends Component {
     constructor() {
@@ -55,9 +56,13 @@ class Header extends Component {
             <div>
               {this.state.user ?
                 <div>
+                  <Row>
+                    
+                  </Row>
+
                   <button onClick={this.logout}>Logout</button>
                   <p>Heippatirallaa {this.state.user.displayName}</p>
-                  <RecipeList />
+                  {/* <RecipeList /> */}
                   <div>
                   <div className="Chefbot-div">
                     <iframe
