@@ -60,11 +60,11 @@ class Header extends Component {
               {this.state.user ?
                 <div>
 
-                  <Button waves='light' onClick={this.logout}>Logout</Button>
+
 
                   <Row id="aleksi">
                     <Col s={6} className='left-column'>
-                  <button onClick={this.logout}>Logout</button>
+                  <Button waves='light' onClick={this.logout}>Logout</Button>
 
                   <p>Heippatirallaa {this.state.user.displayName}</p>
 
