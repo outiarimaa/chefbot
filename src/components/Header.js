@@ -56,7 +56,7 @@ class Header extends Component {
             <div>
               {this.state.user ?
                 <div>
-                  <Row>
+                  <Row id="aleksi">
                     <Col s={6} className='left-column'>
                   <button onClick={this.logout}>Logout</button>
                   <p>Heippatirallaa {this.state.user.displayName}</p>

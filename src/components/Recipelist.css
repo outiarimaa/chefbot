@@ -1,10 +1,10 @@
 body {
-    background-color: white
+    background-color: gainsboro;
 }
 
 .boksi{
-    background-color: #f7f7f7;
-    border: 1px solid #f7f7f7;
+    /*background-color: #f7f7f7;*/
+    /*border: 1px solid #f7f7f7;*/
     padding: 20px;
     margin: 5%
 }
@@ -21,7 +21,8 @@ body {
     border: 1px solid white;
     margin-bottom: 50px;
     padding: 14px;
-    background-color: rgb(224, 235, 235);
+    /*background-color: rgb(224, 235, 235);*/
+    background-color: white;
 }
 
 .recipeImage {
