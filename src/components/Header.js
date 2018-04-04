@@ -4,6 +4,7 @@ import '../App.css';
 import RecipeList from './RecipeList';
 import { Row, Col, Button } from 'react-materialize';
 
+
 class Header extends Component {
     constructor() {
       super();
@@ -56,11 +57,13 @@ class Header extends Component {
             <div>
               {this.state.user ?
                 <div>
+
                   <Row id="aleksi">
                     <Col s={6} className='left-column'>
                   <Button waves="light" onClick={this.logout}>Logout</Button>
+
                   <p>Heippatirallaa {this.state.user.displayName}</p>
-                  {/* <RecipeList /> */}
+
                   <div>
                   <div className="Chefbot-div">
                     <iframe
@@ -80,8 +83,8 @@ class Header extends Component {
                 </div>
                 :
                 <div>
-                  <button onClick={this.loginGoogle}>Login with Google</button>
-                  <button onClick={this.loginFacebook}>Login with Facebook</button>
+                  <Button waves='light' className='red' onClick={this.loginGoogle}>Login with Google</Button>
+                  <Button waves='light' className='blue' onClick={this.loginFacebook}>Login with Facebook</Button>
                   <p>Loggaa sisään, niin näätki jotain</p>
                 </div>
               }

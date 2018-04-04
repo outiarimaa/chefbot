@@ -6,9 +6,9 @@ class Navibar extends Component {
 
   render() {
     return (
-      <div>
+      <div className="navigator">
             <Dropdown trigger={
-                <Button>Profiili</Button>
+                <Button>Profile</Button>
             }>
                 <NavItem>one</NavItem>
                 <NavItem>two</NavItem>
