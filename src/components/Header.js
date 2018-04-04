@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { auth, googleProvider, facebookProvider } from '../firebase.js';
 import '../App.css';
 import RecipeList from './RecipeList';
-import { Row, Col } from 'react-materialize';
+import { Row, Col, Button } from 'react-materialize';
 
 class Header extends Component {
     constructor() {
@@ -58,7 +58,7 @@ class Header extends Component {
                 <div>
                   <Row id="aleksi">
                     <Col s={6} className='left-column'>
-                  <button onClick={this.logout}>Logout</button>
+                  <Button waves="light" onClick={this.logout}>Logout</Button>
                   <p>Heippatirallaa {this.state.user.displayName}</p>
                   {/* <RecipeList /> */}
                   <div>
