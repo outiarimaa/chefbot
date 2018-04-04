@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { auth, googleProvider, facebookProvider } from '../firebase.js';
 import '../App.css';
-import { Row, Col } from 'react-materialize'
+import RecipeList from './RecipeList';
+import { Row, Col } from 'react-materialize';
 
 class Header extends Component {
     constructor() {
@@ -55,6 +56,8 @@ class Header extends Component {
             <div>
               {this.state.user ?
                 <div>
+                  <Row>
+                    <Col s={6} className='left-column'>
                   <button onClick={this.logout}>Logout</button>
                   <p>Heippatirallaa {this.state.user.displayName}</p>
                   {/* <RecipeList /> */}
@@ -68,6 +71,12 @@ class Header extends Component {
                     </iframe>
                   </div>
                   </div>
+                    </Col>
+
+                    <Col s={6} className='right-column'>
+                        <RecipeList />
+                    </Col>
+                  </Row>
                 </div>
                 :
                 <div>
