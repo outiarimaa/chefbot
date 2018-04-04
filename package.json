@@ -5,9 +5,12 @@
   "proxy": "https://banana-pie-98012.herokuapp.com/",
   "dependencies": {
     "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
     "firebase": "^4.12.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-materialize": "^2.1.4",
     "react-scripts": "1.1.1"
   },
   "scripts": {
