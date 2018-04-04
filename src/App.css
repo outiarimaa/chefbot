@@ -48,5 +48,11 @@
 #aleksi {
   background-color: white;
   margin: 40px;
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+.gainsboro {
+ background-color: gainsboro;
 }
 
