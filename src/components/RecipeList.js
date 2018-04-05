@@ -76,9 +76,12 @@ export default class RecipeList extends React.Component {
 
         return (
             <div>
-                <div className={'boksi'}>
-                    <b>All recipes</b> <br/><br/>
-                    {lista}
+                {/*<div className={'boksi'}>*/}
+                    {/*<b>All recipes</b> <br/><br/>*/}
+                    {/*{lista}*/}
+                {/*</div>*/}
+                <div className="boksi">
+                    {hakutulos}
                 </div>
 
                 <div className="boksi">
@@ -96,9 +99,6 @@ export default class RecipeList extends React.Component {
 
                 </div>
 
-                <div className="boksi">
-                    {hakutulos}
-                </div>
 
             </div>
 
