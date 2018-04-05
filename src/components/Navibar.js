@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import { NavItem, Dropdown, Button } from 'react-materialize';
+import { ButtonToolbar, MenuItem, DropdownButton, Glyphicon} from 'react-bootstrap';
 import { auth } from '../firebase.js';
 
 class Navibar extends Component {
@@ -27,14 +28,22 @@ class Navibar extends Component {
         {this.state.user 
           ?
 
-            <Dropdown trigger={
-                <Button>Profile</Button>
-            }>
-              <NavItem>one</NavItem>
-              <NavItem>two</NavItem>
-              <NavItem divider />
-              <NavItem onClick={this.props.logout}>logout</NavItem>
-            </Dropdown>
+            <ButtonToolbar>
+                <DropdownButton
+                    bsStyle="default"
+
+                    title="Profile"
+                    noCaret
+                    id="dropdown-no-caret"
+                >
+                    <MenuItem eventKey="1">Action</MenuItem>
+                    <MenuItem eventKey="2">Another action</MenuItem>
+                    <MenuItem eventKey="3">Something else here</MenuItem>
+                    <MenuItem divider />
+                    <MenuItem eventKey="4" onClick={this.props.logout}>Logout</MenuItem>
+                </DropdownButton>
+            </ButtonToolbar>
+
           :
             <p>Jee, toimii, eli nyt voi renderöitä myös muissa componenteissa ja kattoo että onko user logged in vai out...Navibar.js esimerkki</p>
         }
