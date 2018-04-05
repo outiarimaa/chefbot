@@ -35,13 +35,11 @@ class Navibar extends Component {
             <ButtonToolbar>
                 <DropdownButton>
                     <MenuItem eventKey="1">Action</MenuItem>
-                    <MenuItem eventKey="2">Another action</MenuItem>
-                    <MenuItem eventKey="3">Something else here</MenuItem>
                     <MenuItem divider />
                     <MenuItem eventKey="4" onClick={this.props.logout}>Logout</MenuItem>
                 </DropdownButton>
             </ButtonToolbar>
-                <p className="signin">Heippatirallaa {this.state.user.displayName}</p>
+                <p className="signin">Tervetuloa {this.state.user.displayName}!</p>
             </div>
 
 

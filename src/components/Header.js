@@ -77,7 +77,9 @@ class Header extends Component {
                                     </div>
                                 </Col>
                                 <Col s={6} className='right-column'>
-                                    <RecipeList/>
+                                    <img className="delchick" src="https://images.pexels.com/photos/5916/food-salad-healthy-colorful.jpg?cs=srgb&dl=buffet-chicken-delicious-5916.jpg&fm=jpg" class="Profile-image" alt="Profile image">
+                                    </img>
+                                    {/*<RecipeList/>*/}
                                 </Col>
                             </Row>
                         </div>
