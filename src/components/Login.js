@@ -41,8 +41,6 @@ class Login extends Component {
                             <p>ChefBot is an intelligent chatbot who can help you to find delicious recipes from a vast recipe database. ChefBot is still a child and keeps on learning in order to serve you better.</p>
                         </td>
                         <td className='signin'>
-
-
                                 <div className="loginbuttons">
                                     <div><Button waves='light' id='google-button' onClick={this.loginGoogle}>Login with
                                         Google</Button></div><br/>

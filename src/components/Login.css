@@ -33,22 +33,24 @@ body {
 
 .logintable {
     text-align: center;
-
-}
-.introduction{
-    background-color: black;
-    padding: 15px;
-    opacity: 0.6;
-    color:#ffffff;
-    text-align: center;
-
 }
 
 .signin {
     width: 50%;
     padding: 15px;
     text-align: center;
+    vertical-align: bottom;
 }
+
+.introduction{
+    background-color: black;
+    padding: 15px;
+    opacity: 0.6;
+    color:#ffffff;
+    text-align: center;
+    width: 50%;
+}
+
 
 .picture {
     width: 20%;

@@ -2,10 +2,13 @@ import React, {Component} from 'react';
 import {auth, googleProvider, facebookProvider} from '../firebase.js';
 import '../App.css';
 import RecipeList from './RecipeList';
+/* import { Grid, Row, Col } from 'react-bootstrap'; */
 import {Row, Col} from 'react-materialize';
 import Navibar from './Navibar';
 import Login from './Login';
-
+import {Button} from 'react-materialize';
+import Example from './Example.js';
+import MediaQuery from 'react-responsive';
 
 class Header extends Component {
     constructor() {
@@ -60,11 +63,20 @@ class Header extends Component {
                     <Navibar logout={this.logout}/>
                     {this.state.user ?
                         <div>
+                        <MediaQuery minDeviceWidth={1224} values={{ deviceWidth: 1600 }}>
+                            <div>You are a desktop or laptop</div>
+                            <MediaQuery minDeviceWidth={1824}>
+                                <div>You also have a huge screen</div>
+                            </MediaQuery>
+                            <MediaQuery maxWidth={1224}>
+                                <div>You are sized like a tablet or mobile phone though</div>
+                            </MediaQuery>
+                        </MediaQuery>
 
                             <Row id="aleksi">
                                 <Col s={6} className='left-column'>
 
-                                    {/*<p>Heippatirallaa {this.state.user.displayName}</p>*/}
+                                    <p>Heippatirallaa {this.state.user.displayName}</p>
                                     <div>
                                         <div className="Chefbot-div">
                                             <iframe
@@ -101,7 +113,6 @@ class Header extends Component {
             </div>
         );
     }
-
 }
 
 export default Header;
