@@ -4,18 +4,45 @@ body {
     background-attachment: fixed;
     background-position: center;
     font-family: 'Work Sans', sans-serif;
-    text-shadow: 1px 1px 2px white, 0 0 25px darkorange, 0 0 5px white;
 }
 
 #fb-button {
     background-color: #4267B2;
+    width: 200px;
 }
 
 #google-button {
     background-color: #DD4B39;
+    width: 200px;
 }
 
 .loginpage {
+    margin-top: auto;
+    margin-bottom: auto;
+    position: absolute;
+    top: 40%;
+    left: 20%;
     text-align: center;
-    vertical-align: middle;
+    background-color: white;
+    opacity: 0.9;
+
+    border-radius: 5px;
+    width: 60%;
+}
+
+.logintable {
+    text-align: center;
+
+}
+.introduction{
+    background-color: black;
+    padding: 15px;
+    opacity: 0.6;
+    color:#ffffff;
+}
+
+.signin {
+    width: 50%;
+    padding: 15px;
+    text-align: center;
 }
