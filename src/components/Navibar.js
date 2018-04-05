@@ -48,7 +48,7 @@ class Navibar extends Component {
 
 
           :
-            <p>Jee, toimii, eli nyt voi renderöitä myös muissa componenteissa ja kattoo että onko user logged in vai out...Navibar.js esimerkki</p>
+            <p></p>
         }
       </div>
     );
