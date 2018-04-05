@@ -34,13 +34,18 @@ class Login extends Component {
 
                     <tbody>
                     <tr className="logintable" >
-                        <td className='introduction'></td>
+
+                        <td className='introduction'>
+                            <h1>Welcome to ChefBot</h1>
+                            <img className="picture" src="http://fileserver.imagebucket.net/i/00000/5nnvtdsihay4_t.jpg"/>
+                            <p>ChefBot is an intelligent chatbot who can help you to find delicious recipes from a vast recipe database. ChefBot is still a child and keeps on learning in order to serve you better.</p>
+                        </td>
                         <td className='signin'>
 
 
                                 <div className="loginbuttons">
                                     <div><Button waves='light' id='google-button' onClick={this.loginGoogle}>Login with
-                                        Google</Button></div>
+                                        Google</Button></div><br/>
                                     <div><Button waves='light' id='fb-button' onClick={this.loginFacebook}>Login with
                                         Facebook</Button></div>
                                     <p>Please login in to use ChefBot</p>

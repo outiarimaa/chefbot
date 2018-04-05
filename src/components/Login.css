@@ -4,6 +4,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     font-family: 'Work Sans', sans-serif;
+    letter-spacing: 1px;
 }
 
 #fb-button {
@@ -39,7 +40,7 @@ body {
     padding: 15px;
     opacity: 0.6;
     color:#ffffff;
-    background: url("../resources/static/images/minilogo.png");
+    text-align: center;
 
 }
 
@@ -47,4 +48,13 @@ body {
     width: 50%;
     padding: 15px;
     text-align: center;
+}
+
+.picture {
+    width: 20%;
+    background-color: black;
+}
+
+p {
+    padding-top: 10px;
 }
