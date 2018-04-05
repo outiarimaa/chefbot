@@ -26,7 +26,6 @@ body {
     text-align: center;
     background-color: white;
     opacity: 0.9;
-
     border-radius: 5px;
     width: 60%;
 }
@@ -36,7 +35,7 @@ body {
 }
 
 .signin {
-    width: 50%;
+    width: 40%;
     padding: 15px;
     text-align: center;
     vertical-align: bottom;
@@ -48,7 +47,7 @@ body {
     opacity: 0.6;
     color:#ffffff;
     text-align: center;
-    width: 50%;
+    width: 40%;
 }
 
 
