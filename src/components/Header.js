@@ -7,7 +7,6 @@ import {Row, Col} from 'react-materialize';
 import Navibar from './Navibar';
 import Login from './Login';
 import {Button} from 'react-materialize';
-import Example from './Example.js';
 import MediaQuery from 'react-responsive';
 
 class Header extends Component {
@@ -89,9 +88,7 @@ class Header extends Component {
                                     </div>
                                 </Col>
                                 <Col s={6} className='right-column'>
-                                    <img className="delchick" src="https://images.pexels.com/photos/5916/food-salad-healthy-colorful.jpg?cs=srgb&dl=buffet-chicken-delicious-5916.jpg&fm=jpg" class="Profile-image" alt="Profile image">
-                                    </img>
-                                    {/*<RecipeList/>*/}
+                                    <RecipeList/>
                                 </Col>
                             </Row>
                         </div>

@@ -3,7 +3,6 @@ import '../App.css';
 import { NavItem, Dropdown, Button } from 'react-materialize';
 import { ButtonToolbar, MenuItem, DropdownButton, Glyphicon} from 'react-bootstrap';
 import { auth } from '../firebase.js';
-import Example from './Example';
 
 class Navibar extends Component {
   constructor(props) {
