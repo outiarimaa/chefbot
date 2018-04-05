@@ -12,15 +12,6 @@ class Navibar extends Component {
     };
   }
 
-  logout = () => {
-    auth.signOut()
-      .then(() => {
-        this.setState({
-          user: null
-        });
-      });
-  }
-
   componentDidMount() {
     auth.onAuthStateChanged(user => {
       user
@@ -40,7 +31,7 @@ class Navibar extends Component {
               <NavItem>one</NavItem>
               <NavItem>two</NavItem>
               <NavItem divider />
-              <NavItem onClick={this.logout}>logout</NavItem>
+              <NavItem onClick={this.props.logout}>logout</NavItem>
             </Dropdown>
           :
             <p>Jee, toimii, eli nyt voi renderöitä myös muissa componenteissa ja kattoo että onko user logged in vai out...Navibar.js esimerkki</p>

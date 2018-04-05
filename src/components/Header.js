@@ -3,7 +3,7 @@ import { auth, googleProvider, facebookProvider } from '../firebase.js';
 import '../App.css';
 import RecipeList from './RecipeList';
 import { Row, Col } from 'react-materialize';
-
+import Navibar from './Navibar';
 import { Button } from 'react-materialize';
 
 
@@ -57,9 +57,9 @@ class Header extends Component {
       return (
         <div>
             <div>
+            <Navibar logout={this.logout} />
               {this.state.user ?
                 <div>
-                  <Button waves='light' onClick={this.logout}>Logout</Button>
                   <Row id="aleksi">
                     <Col s={6} className='left-column'>
                   <p>Heippatirallaa {this.state.user.displayName}</p>
