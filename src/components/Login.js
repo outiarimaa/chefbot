@@ -28,15 +28,29 @@ class Login extends Component {
 
     render() {
         return (
+            <div className="loginpage">
 
-            <div className='loginpage'>
+                <table>
 
-                <div className="loginbuttons">
-                    <Button waves='light' id='google-button' onClick={this.loginGoogle}>Login with Google</Button>
-                    <Button waves='light' id='fb-button' onClick={this.loginFacebook}>Login with Facebook</Button>
-                    <p>Please login in to use ChefBot</p>
-                </div>
+                    <tbody>
+                    <tr className="logintable" >
+                        <td className='introduction'>kjsdfklsdjfkl</td>
+                        <td className='signin'>
 
+
+                                <div className="loginbuttons">
+                                    <div><Button waves='light' id='google-button' onClick={this.loginGoogle}>Login with
+                                        Google</Button></div>
+                                    <div><Button waves='light' id='fb-button' onClick={this.loginFacebook}>Login with
+                                        Facebook</Button></div>
+                                    <p>Please login in to use ChefBot</p>
+                                </div>
+
+
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         );
     }
