@@ -34,7 +34,7 @@ class Login extends Component {
 
                     <tbody>
                     <tr className="logintable" >
-                        <td className='introduction'>kjsdfklsdjfkl</td>
+                        <td className='introduction'></td>
                         <td className='signin'>
 
 
