@@ -32,8 +32,7 @@ class Login extends Component {
 
             <div className="row loginpage">
 
-
-                <div className='introduction col-md-6'>
+                <div className='introduction col-md-8'>
                     <h1>Welcome to ChefBot</h1>
                     <img className="picture"
                          src="http://fileserver.imagebucket.net/i/00000/5nnvtdsihay4_t.jpg"/>
@@ -41,7 +40,7 @@ class Login extends Component {
                         recipe database. ChefBot is still a child and keeps on learning in order to serve you
                         better.</p>
                 </div>
-                <div className='signin col-md-6'>
+                <div className='signin col-md-4'>
                     <div className="loginbuttons">
                         <div><Button waves='light' id='google-button' onClick={this.loginGoogle}>Login with
                             Google</Button></div>
@@ -50,8 +49,6 @@ class Login extends Component {
                             Facebook</Button></div>
                         <p>Please log in to use ChefBot</p>
                     </div>
-
-
                 </div>
 
 

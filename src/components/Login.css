@@ -18,24 +18,13 @@ body {
 }
 
 .loginpage {
-    margin-top: auto;
-    margin-bottom: auto;
-    position: absolute;
-    top: 40%;
-    left: 20%;
-    text-align: center;
     background-color: white;
     opacity: 0.9;
     border-radius: 5px;
-    width: 60%;
-}
 
-.logintable {
-    text-align: center;
 }
 
 .signin {
-    width: 40%;
     padding: 15px;
     text-align: center;
     vertical-align: bottom;
@@ -46,8 +35,6 @@ body {
     padding: 15px;
     opacity: 0.6;
     color:#ffffff;
-    text-align: center;
-    width: 40%;
 }
 
 
