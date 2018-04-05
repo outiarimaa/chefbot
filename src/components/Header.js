@@ -6,7 +6,6 @@ import { Row, Col } from 'react-materialize';
 import Navibar from './Navibar';
 import { Button } from 'react-materialize';
 
-
 class Header extends Component {
     constructor() {
       super();
@@ -60,14 +59,6 @@ class Header extends Component {
             <Navibar logout={this.logout} />
               {this.state.user ?
                 <div>
-
-
-
-
-                  <Row id="aleksi">
-                    <Col s={6} className='left-column'>
-                  <Button waves='light' onClick={this.logout}>Logout</Button>
-
 
                   <Row id="aleksi">
                     <Col s={6} className='left-column'>
