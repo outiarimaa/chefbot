@@ -33,8 +33,15 @@ body {
 
 .logintable {
     text-align: center;
-
 }
+
+.signin {
+    width: 50%;
+    padding: 15px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
 .introduction{
     background-color: black;
     padding: 15px;
@@ -42,14 +49,8 @@ body {
     color:#ffffff;
     text-align: center;
     width: 50%;
-
 }
 
-.signin {
-    width: 50%;
-    padding: 15px;
-    text-align: center;
-}
 
 .picture {
     width: 20%;
