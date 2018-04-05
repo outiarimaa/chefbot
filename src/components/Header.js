@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import { auth, googleProvider, facebookProvider } from '../firebase.js';
 import '../App.css';
 import RecipeList from './RecipeList';
-import { Row, Col, Button } from 'react-materialize';
-
+import { Row, Col } from 'react-materialize';
+import Navibar from './Navibar';
+import { Button } from 'react-materialize';
 
 class Header extends Component {
     constructor() {
@@ -55,6 +56,7 @@ class Header extends Component {
       return (
         <div>
             <div>
+            <Navibar logout={this.logout} />
               {this.state.user ?
                 <div>
 
@@ -63,7 +65,6 @@ class Header extends Component {
                   <Button waves="light" onClick={this.logout}>Logout</Button>
 
                   <p>Heippatirallaa {this.state.user.displayName}</p>
-
                   <div>
                   <div className="Chefbot-div">
                     <iframe
@@ -75,7 +76,6 @@ class Header extends Component {
                   </div>
                   </div>
                     </Col>
-
                     <Col s={6} className='right-column'>
                         <RecipeList />
                     </Col>
@@ -87,7 +87,7 @@ class Header extends Component {
                   <Button waves='light' className='blue' onClick={this.loginFacebook}>Login with Facebook</Button>
                   <p>Loggaa sisään, niin näätki jotain</p>
                 </div>
-              }
+               } 
             </div>
         </div>
       );
