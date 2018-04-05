@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import '../App.css';
 import { NavItem, Dropdown, Button } from 'react-materialize';
 import { ButtonToolbar, MenuItem, DropdownButton, Glyphicon} from 'react-bootstrap';
+
 import { auth } from '../firebase.js';
+
 
 class Navibar extends Component {
   constructor(props) {
@@ -22,7 +24,9 @@ class Navibar extends Component {
   }
 
   render() {
+      console.log('navissa', this.state.user);
     return (
+
 
       <div>
         {this.state.user 

@@ -4,6 +4,7 @@ import '../App.css';
 import RecipeList from './RecipeList';
 import { Row, Col } from 'react-materialize';
 import Navibar from './Navibar';
+import Login from './Login';
 import { Button } from 'react-materialize';
 
 class Header extends Component {
@@ -81,11 +82,15 @@ class Header extends Component {
                   </Row>
                 </div>
                 :
-                <div>
+                  <div>
+
+                  <Login omanimi={this.loginGoogle()}/>
+                  <div>
                   <Button waves='light' className='red' onClick={this.loginGoogle}>Login with Google</Button>
                   <Button waves='light' className='blue' onClick={this.loginFacebook}>Login with Facebook</Button>
                   <p>Loggaa sisään, niin näätki jotain</p>
-                </div>
+                  </div>
+                      </div>
                } 
             </div>
         </div>
