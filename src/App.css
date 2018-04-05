@@ -61,3 +61,13 @@
   float: right;
   margin-right: 8vw;
 }
+
+@media only screen and (max-width: 400px) {
+  .signin {
+    color: red;
+  }
+
+  .left-column {
+
+  }
+}

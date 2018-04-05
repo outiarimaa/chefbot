@@ -5,7 +5,7 @@ import RecipeList from './RecipeList';
 import {Row, Col} from 'react-materialize';
 import Navibar from './Navibar';
 import Login from './Login';
-import {Button} from 'react-materialize';
+
 
 class Header extends Component {
     constructor() {
@@ -99,6 +99,7 @@ class Header extends Component {
             </div>
         );
     }
+
 }
 
 export default Header;
