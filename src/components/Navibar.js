@@ -31,15 +31,9 @@ class Navibar extends Component {
       <div>
         {this.state.user 
           ?
-
+            <div>
             <ButtonToolbar>
-                <DropdownButton
-                    bsStyle="default"
-
-                    title="Profile"
-                    noCaret
-                    id="dropdown-no-caret"
-                >
+                <DropdownButton>
                     <MenuItem eventKey="1">Action</MenuItem>
                     <MenuItem eventKey="2">Another action</MenuItem>
                     <MenuItem eventKey="3">Something else here</MenuItem>
@@ -47,6 +41,11 @@ class Navibar extends Component {
                     <MenuItem eventKey="4" onClick={this.props.logout}>Logout</MenuItem>
                 </DropdownButton>
             </ButtonToolbar>
+                <p className="signin">Heippatirallaa {this.state.user.displayName}</p>
+            </div>
+
+
+
 
           :
             <p>Jee, toimii, eli nyt voi renderöitä myös muissa componenteissa ja kattoo että onko user logged in vai out...Navibar.js esimerkki</p>

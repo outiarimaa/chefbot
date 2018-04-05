@@ -64,7 +64,7 @@ class Header extends Component {
                             <Row id="aleksi">
                                 <Col s={6} className='left-column'>
 
-                                    <p>Heippatirallaa {this.state.user.displayName}</p>
+                                    {/*<p>Heippatirallaa {this.state.user.displayName}</p>*/}
                                     <div>
                                         <div className="Chefbot-div">
                                             <iframe
