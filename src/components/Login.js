@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
-import { Button } from 'react-materialize';
-import { auth } from '../firebase.js';
+import React, {Component} from 'react';
+import {Button} from 'react-materialize';
+import {auth} from '../firebase.js';
 import Navibar from "./Navibar";
 import {facebookProvider, googleProvider} from "../firebase";
+import './Login.css';
 
 class Login extends Component {
     loginGoogle = () => {
@@ -24,20 +25,17 @@ class Login extends Component {
                 });
             });
     }
+
     render() {
         return (
 
-            <div>
+            <div className='loginpage'>
 
-
-                    <div>
-                        <Button waves='light' className='red' onClick={this.loginGoogle}>Login with Google</Button>
-                        <Button waves='light' className='blue' onClick={this.loginFacebook}>Login with Facebook</Button>
-                        <p>Loggaa sisään, niin näätki jotain</p>
-                    </div>
-
-                    <p>Jee, toimii, eli nyt voi renderöitä myös muissa componenteissa ja kattoo että onko user logged in vai out...Navibar.js esimerkki</p>
-
+                <div className="loginbuttons">
+                    <Button waves='light' id='google-button' onClick={this.loginGoogle}>Login with Google</Button>
+                    <Button waves='light' id='fb-button' onClick={this.loginFacebook}>Login with Facebook</Button>
+                    <p>Please login in to use ChefBot</p>
+                </div>
 
             </div>
         );

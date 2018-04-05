@@ -1,0 +1,21 @@
+body {
+    background: url("../resources/static/images/logincover.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Work Sans', sans-serif;
+    text-shadow: 1px 1px 2px white, 0 0 25px darkorange, 0 0 5px white;
+}
+
+#fb-button {
+    background-color: #4267B2;
+}
+
+#google-button {
+    background-color: #DD4B39;
+}
+
+.loginpage {
+    text-align: center;
+    vertical-align: middle;
+}
