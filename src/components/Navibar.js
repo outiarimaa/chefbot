@@ -23,7 +23,9 @@ class Navibar extends Component {
   }
 
   render() {
+      console.log('navissa', this.state.user);
     return (
+
 
       <div>
         {this.state.user 
