@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {Button} from 'react-materialize';
 import {auth} from '../firebase.js';
-import Navibar from "./Navibar";
 import {facebookProvider, googleProvider} from "../firebase";
 import './Login.css';
 

@@ -1,7 +1,6 @@
-import React, {Component} from 'react';
-import {ButtonToolbar, MenuItem, DropdownButton, Glyphicon} from 'react-bootstrap';
-import {BrowserRouter, Route, Link} from 'react-router-dom';
-import {auth} from "../firebase";
+import React, { Component } from 'react';
+import { ButtonToolbar, MenuItem, DropdownButton } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 class DropdownMenu extends Component {
     render() {
@@ -9,7 +8,7 @@ class DropdownMenu extends Component {
             <div>
                 <ButtonToolbar>
                     <DropdownButton>
-                        <MenuItem eventKey="1"><Link to='/header'>Header</Link></MenuItem>
+                        <MenuItem eventKey="1"><Link to='/'>Header</Link></MenuItem>
                         <MenuItem eventKey="1"><Link to='/profile'>Profile</Link></MenuItem>
                         <MenuItem eventKey="1"><Link to='/images'>Images</Link></MenuItem>
                         <MenuItem divider/>

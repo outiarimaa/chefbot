@@ -11,7 +11,7 @@ class ShowPage extends Component {
                 <Switch>
                     <Route path='/profile' component={Profile}/>
                     <Route path='/images' component={ImageGallery}/>
-                    <Route path='/header' component={Header}/>
+                    <Route path='/' component={Header}/>
                 </Switch>
             </main>
         );
