@@ -33,17 +33,19 @@ class Navibar extends Component {
             <div>
             <ButtonToolbar>
                 <DropdownButton>
-                    <MenuItem eventKey="1">Lol</MenuItem>
+                    <MenuItem eventKey="1"><Link to='/header'>Header</Link></MenuItem>
+                    <MenuItem eventKey="1"><Link to='/profile'>Profile</Link></MenuItem>
+                    <MenuItem eventKey="1"><Link to='/images'>Images</Link></MenuItem>
                     <MenuItem divider />
                     <MenuItem eventKey="4" onClick={this.props.logout}>Logout</MenuItem>
                 </DropdownButton>
             </ButtonToolbar>
                 <p className="signin">Tervetuloa {this.state.user.displayName}!</p>
-                <ul>
+{/*                <ul>
                     <li><Link to='/header'>Header</Link></li>
                     <li><Link to='/profile'>Profile</Link></li>
                     <li><Link to='/images'>Images</Link></li>
-                </ul>
+                </ul>*/}
             </div>
 
 
