@@ -1,7 +1,6 @@
-import React, {Component} from 'react';
-import {ButtonToolbar, MenuItem, DropdownButton, Glyphicon} from 'react-bootstrap';
-import {BrowserRouter, Route, Link} from 'react-router-dom';
-import {auth} from "../firebase";
+import React, { Component } from 'react';
+import { ButtonToolbar, MenuItem, DropdownButton } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 class DropdownMenu extends Component {
     render() {
