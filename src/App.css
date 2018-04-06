@@ -1,3 +1,11 @@
+body {
+  background: url("../resources/static/images/pineapple.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  border-collapse: collapse;
+}
+
 .App {
   text-align: center;
 }
@@ -42,13 +50,9 @@
 
 }
 
-.testi {
-  background-color: gainsboro;
-}
-
 #aleksi {
-  background-color: white;
-  opacity: 0.9;
+  /*background-color: white;*/
+  /*opacity: 0.9;*/
   margin-top: 5vw;
   margin-right: 8vw;
   margin-left: 8vw;
@@ -63,12 +67,7 @@
   margin-right: 25vw;
 }
 
-@media only screen and (max-width: 400px) {
-  .signin {
-    color: red;
-  }
 
   .left-column {
 
   }
-}

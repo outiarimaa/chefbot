@@ -42,15 +42,15 @@ class Header extends Component {
                     <Navibar logout={this.logout}/>
                     {this.state.user ?
                         <div>
-                        <MediaQuery minDeviceWidth={1224} values={{ deviceWidth: 1600 }}>
-                            <div>You are a desktop or laptop</div>
-                            <MediaQuery minDeviceWidth={1824}>
-                                <div>You also have a huge screen</div>
-                            </MediaQuery>
-                            <MediaQuery maxWidth={1224}>
-                                <div>You are sized like a tablet or mobile phone though</div>
-                            </MediaQuery>
-                        </MediaQuery>
+                        {/*<MediaQuery minDeviceWidth={1224} values={{ deviceWidth: 1600 }}>*/}
+                            {/*<div>You are a desktop or laptop</div>*/}
+                            {/*<MediaQuery minDeviceWidth={1824}>*/}
+                                {/*<div>You also have a huge screen</div>*/}
+                            {/*</MediaQuery>*/}
+                            {/*<MediaQuery maxWidth={1224}>*/}
+                                {/*<div>You are sized like a tablet or mobile phone though</div>*/}
+                            {/*</MediaQuery>*/}
+                        {/*</MediaQuery>*/}
 
                             <Row id="aleksi">
                                 <Col s={6} className='left-column'>
