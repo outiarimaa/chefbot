@@ -43,6 +43,7 @@ class Profile extends Component {
                             </DropdownButton>
                         </ButtonToolbar>
                         <p className="signin">User profile for {this.state.user.displayName}.</p>
+                        <p className="signin">Email: {this.state.user.lastSignInTime}</p>
                         {/*                <ul>
                     <li><Link to='/header'>Header</Link></li>
                     <li><Link to='/profile'>Profile</Link></li>
