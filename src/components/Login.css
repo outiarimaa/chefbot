@@ -1,10 +1,57 @@
+
+
+@media (min-width: 0) {
+    body {
+        background: url("../resources/static/images/covermobile.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+}
+
+@media (min-width: 800px) {
+    body {
+        background: url("../resources/static/images/logincover.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+}
+
 body {
-    background: url("../resources/static/images/logincover.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+
     font-family: 'Work Sans', sans-serif;
     letter-spacing: 1px;
+    border-collapse: collapse;
+}
+
+.introduction{
+    background-color: black;
+    opacity: 0.6;
+    color:#ffffff;
+    text-align: center;
+    padding: 15px;
+    margin:auto;
+    border-radius: 5px 5px 0 0;
+
+}
+
+.signin {
+    margin:auto;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    padding: 15px;
+    width:100%;
+    border-radius: 0 0 5px 5px;
+}
+
+.picture {
+    width: 20%;
+    background-color: black;
+}
+
+p {
+    padding-top: 10px;
 }
 
 #fb-button {
@@ -17,32 +64,10 @@ body {
     width: 200px;
 }
 
-.loginpage {
-    background-color: white;
-    opacity: 0.9;
-    border-radius: 5px;
+/*[class*="col-"] {*/
+    /*padding-top: 1rem;*/
+    /*padding-bottom: 1rem;*/
+    /*background-color: rgba(86, 61, 124, .15);*/
+    /*border: 1px solid rgba(86, 61, 124, .2);*/
+/*}*/
 
-}
-
-.signin {
-    padding: 15px;
-    text-align: center;
-    vertical-align: bottom;
-}
-
-.introduction{
-    background-color: black;
-    padding: 15px;
-    opacity: 0.6;
-    color:#ffffff;
-}
-
-
-.picture {
-    width: 20%;
-    background-color: black;
-}
-
-p {
-    padding-top: 10px;
-}
