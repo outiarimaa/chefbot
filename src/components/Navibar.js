@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import '../App.css';
-import { NavItem, Dropdown, Button } from 'react-materialize';
-import { ButtonToolbar, MenuItem, DropdownButton, Glyphicon} from 'react-bootstrap';
-import {BrowserRouter, Route, Link} from 'react-router-dom';
+import { ButtonToolbar, MenuItem, DropdownButton } from 'react-bootstrap';
+import { Link} from 'react-router-dom';
 import { auth } from '../firebase.js';
-// import DropdownMenu from "./DropdownMenu";
 
 class Navibar extends Component {
   constructor(props) {
@@ -26,16 +24,13 @@ class Navibar extends Component {
   render() {
       console.log('navissa', this.state.user);
     return (
-
-
       <div>
         {this.state.user 
           ?
             <div>
-              {/*<DropdownMenu />*/}
             <ButtonToolbar>
                 <DropdownButton>
-                    <MenuItem eventKey="1"><Link to='/header'>Header</Link></MenuItem>
+                    <MenuItem eventKey="1"><Link to='/'>Header</Link></MenuItem>
                     <MenuItem eventKey="1"><Link to='/profile'>Profile</Link></MenuItem>
                     <MenuItem eventKey="1"><Link to='/images'>Images</Link></MenuItem>
                     <MenuItem divider />
@@ -43,18 +38,9 @@ class Navibar extends Component {
                 </DropdownButton>
             </ButtonToolbar>
                 <p className="signin">Tervetuloa {this.state.user.displayName}!</p>
-{/*                <ul>
-                    <li><Link to='/header'>Header</Link></li>
-                    <li><Link to='/profile'>Profile</Link></li>
-                    <li><Link to='/images'>Images</Link></li>
-                </ul>*/}
             </div>
-
-
-
-
           :
-            <p></p>
+            ''
         }
       </div>
     );

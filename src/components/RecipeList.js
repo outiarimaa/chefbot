@@ -52,7 +52,7 @@ export default class RecipeList extends React.Component {
 
     render() {
         console.log('mapataantaa', this.state.recipes);
-        let lista = this.state.recipes.map(r => <div key={r.title}>{r.title}</div>)
+       /*  let lista = this.state.recipes.map(r => <div key={r.title}>{r.title}</div>) */
 
         let hakutulos = this.state.recipesToShow.map(r =>
             <div className={'recipeDiv'}>
