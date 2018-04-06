@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { Button } from 'react-bootstrap';
 import './Recipelist.css'
 
 export default class RecipeList extends React.Component {
@@ -15,40 +16,35 @@ export default class RecipeList extends React.Component {
             .then(res => {
                 const recipes = res.data;
                 this.setState({recipes: recipes});
-            })
+            });
     }
 
     handleSubmit_searchName = (event) => {
         event.preventDefault()
-        this.setState({recipesToShow: this.state.recipes.filter(r => r.title.toLowerCase().includes(this.state.nameSearch.toLowerCase()))})
+        this.setState({recipesToShow: this.state.recipes.filter(r => r.title.toLowerCase().includes(this.state.nameSearch.toLowerCase()))});
     }
 
     handleChange_searchName = (event) => {
-        this.setState({nameSearch: event.target.value})
+        this.setState({nameSearch: event.target.value});
     }
 
-
-
     handleChange_searchIngredient = (event) => {
-        this.setState({ingredientSearch: event.target.value})
+        this.setState({ingredientSearch: event.target.value});
     }
 
     handleSubmit_searchIngredient = (event) => {
-        event.preventDefault()
+        event.preventDefault();
 
         let lista = [];
         for(let i = 0; i < this.state.recipes.length; i++){
             for(let j = 0; j < this.state.recipes[i].extendedIngredients.length; j++){
                 if(this.state.recipes[i].extendedIngredients[j].name.includes(this.state.ingredientSearch)){
-                    lista.push(this.state.recipes[i])
+                    lista.push(this.state.recipes[i]);
                 }
             }
         }
-
-        this.setState({recipesToShow: lista})
+        this.setState({recipesToShow: lista});
     }
-
-
 
     render() {
         console.log('mapataantaa', this.state.recipes);
@@ -73,36 +69,26 @@ export default class RecipeList extends React.Component {
             </div>
         )
 
-
         return (
             <div>
-                {/*<div className={'boksi'}>*/}
-                    {/*<b>All recipes</b> <br/><br/>*/}
-                    {/*{lista}*/}
-                {/*</div>*/}
-                <div className="boksi">
-                    {hakutulos}
-                </div>
-
                 <div className="boksi">
                     <form className={'formi'} onSubmit={this.handleSubmit_searchName}>
                         <label className={'nameLabel'}>Search by name</label>
                         <input type="text" onChange={this.handleChange_searchName} value={this.state.nameSearch}/>
-                        <button type={'submit'}>search</button>
+                        <Button className="formbutton" bsStyle="info" type={'submit'}>search</Button>
                     </form>
 
                     <form className={'formi'} onSubmit={this.handleSubmit_searchIngredient}>
                         <label className={'recipeLabel'}>Search by ingredient</label>
-                        <input type="text" onChange={this.handleChange_searchIngredient} value={this.state.ingredientSearch}/>
-                        <button type={'submit'}>search</button>
+                        <input className="testi" type="text" onChange={this.handleChange_searchIngredient} value={this.state.ingredientSearch}/>
+                        <Button className="formbutton" bsStyle="info" type={'submit'}>search</Button>
                     </form>
-
                 </div>
-
-
+                <div className="boksi">
+                    {hakutulos}
+                </div>
             </div>
-
-        )
+        );
     }
 }
 

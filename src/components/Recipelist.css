@@ -31,8 +31,18 @@ body {
 
 .nameLabel {
     margin-right: 41px;
+    font-size: 1.2em;
 }
 
 .recipeLabel {
     margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.testi {
+    font-size: 1em;
+}
+
+.formbutton {
+    background-color: rgb(17, 202, 17);
 }
