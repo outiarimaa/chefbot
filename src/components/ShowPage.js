@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Profile from './Profile';
+import ImageGallery from './ImageGallery';
+import Header from './Header';
 
 class ShowPage extends Component {
     render() {
@@ -8,8 +10,8 @@ class ShowPage extends Component {
             <main>
                 <Switch>
                     <Route path='/profile' component={Profile}/>
-{/*                    <Route path='/roster' component={Roster}/>
-                    <Route path='/schedule' component={Schedule}/>*/}
+                    <Route path='/images' component={ImageGallery}/>
+                    <Route path='/header' component={Header}/>
                 </Switch>
             </main>
         );

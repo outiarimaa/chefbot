@@ -40,8 +40,9 @@ class Navibar extends Component {
             </ButtonToolbar>
                 <p className="signin">Tervetuloa {this.state.user.displayName}!</p>
                 <ul>
+                    <li><Link to='/header'>Header</Link></li>
                     <li><Link to='/profile'>Profile</Link></li>
-                    <li>Heya</li>
+                    <li><Link to='/images'>Images</Link></li>
                 </ul>
             </div>
 

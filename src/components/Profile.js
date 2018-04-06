@@ -6,7 +6,7 @@ class Profile extends Component {
     render() {
         return (
             <div>
-                <h1>Hölökynkölökyn</h1>
+                <h1>Proffiili</h1>
             </div>
         );
     }
