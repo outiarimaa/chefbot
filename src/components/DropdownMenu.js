@@ -9,7 +9,7 @@ class DropdownMenu extends Component {
             <div>
                 <ButtonToolbar>
                     <DropdownButton>
-                        <MenuItem eventKey="1"><Link to='/header'>Header</Link></MenuItem>
+                        <MenuItem eventKey="1"><Link to='/'>Header</Link></MenuItem>
                         <MenuItem eventKey="1"><Link to='/profile'>Profile</Link></MenuItem>
                         <MenuItem eventKey="1"><Link to='/images'>Images</Link></MenuItem>
                         <MenuItem divider/>
