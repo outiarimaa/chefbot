@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import DropdownMenu from "./DropdownMenu";
 
 class ImageGallery extends Component {
 
@@ -6,6 +7,7 @@ class ImageGallery extends Component {
         return (
             <div>
                 <h1>Images Galleryssä</h1>
+                <DropdownMenu />
             </div>
         );
     }

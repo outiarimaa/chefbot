@@ -27,26 +27,6 @@ class Header extends Component {
             });
     }
 
-/*    loginGoogle = () => {
-        auth.signInWithPopup(googleProvider)
-            .then((result) => {
-                const user = result.user;
-                this.setState({
-                    user
-                });
-            });
-    }
-
-    loginFacebook = () => {
-        auth.signInWithPopup(facebookProvider)
-            .then((result) => {
-                const user = result.user;
-                this.setState({
-                    user
-                });
-            });
-    }*/
-
     componentDidMount() {
         auth.onAuthStateChanged((user) => {
             if (user) {

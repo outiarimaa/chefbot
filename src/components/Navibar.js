@@ -4,6 +4,7 @@ import { NavItem, Dropdown, Button } from 'react-materialize';
 import { ButtonToolbar, MenuItem, DropdownButton, Glyphicon} from 'react-bootstrap';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
 import { auth } from '../firebase.js';
+// import DropdownMenu from "./DropdownMenu";
 
 class Navibar extends Component {
   constructor(props) {
@@ -31,6 +32,7 @@ class Navibar extends Component {
         {this.state.user 
           ?
             <div>
+              {/*<DropdownMenu />*/}
             <ButtonToolbar>
                 <DropdownButton>
                     <MenuItem eventKey="1"><Link to='/header'>Header</Link></MenuItem>
