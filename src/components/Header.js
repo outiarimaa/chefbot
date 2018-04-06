@@ -12,7 +12,8 @@ class Header extends Component {
         super();
         this.state = {
             username: '',
-            user: null
+            user: null,
+            shown: true
         }
     }
 
@@ -25,6 +26,12 @@ class Header extends Component {
             });
     }
 
+    toggle() {
+		this.setState({
+			shown: !this.state.shown
+		});
+	}
+
     componentDidMount() {
         auth.onAuthStateChanged((user) => {
             if (user) {
@@ -34,10 +41,17 @@ class Header extends Component {
     }
 
     render() {
+        let shown = {
+			display: this.state.shown ? "block" : "none"
+		};
+		
+		let hidden = {
+			display: this.state.shown ? "none" : "block"
+		}
         return (
             <div>
                 <div>
-                    <Navibar logout={this.logout}/>
+                    <Navibar logout={this.logout} />
                     {this.state.user ?
                         <div>
                         <MediaQuery minDeviceWidth={1224} values={{ deviceWidth: 1600 }}>
@@ -53,24 +67,32 @@ class Header extends Component {
                             <Row id="aleksi">
                                 <Col s={6} className='left-column'>
                                     <div>
-                                        <div className="Chefbot-div">
-                                            <iframe
-                                                title="chefbot"
-                                                width="100%"
-                                                height="100%"
-                                                src="https://console.dialogflow.com/api-client/demo/embedded/69d0c8a7-3ee8-444a-afb5-a514fb6a3bf1">
-                                            </iframe>
+                                        <a className="toggle-a" onClick={this.toggle.bind(this)}>
+                                            <img className="toggleimage" alt="chefbot" src="http://fileserver.imagebucket.net/i/00000/5nnvtdsihay4_t.jpg" />
+                                        </a>
+                                        <p>Show/Hide</p>
+                                       {/*  <button onClick={this.toggle.bind(this)}>ChecBot</button> */}
+                                        <div style={ shown }>
+                                            <div className="Chefbot-div">
+                                                <iframe
+                                                    title="chefbot"
+                                                    width="100%"
+                                                    height="100%"
+                                                    src="https://console.dialogflow.com/api-client/demo/embedded/69d0c8a7-3ee8-444a-afb5-a514fb6a3bf1">
+                                                </iframe>
+                                            </div>
                                         </div>
+                                        <div style={ hidden }></div>
                                     </div>
                                 </Col>
                                 <Col s={6} className='right-column'>
-                                    <RecipeList/>
+                                    <RecipeList />
                                 </Col>
                             </Row>
                         </div>
                         :
                         <div>
-                            <Login/>
+                            <Login />
                         </div>
                     }
                 </div>

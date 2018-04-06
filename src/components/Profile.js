@@ -34,7 +34,7 @@ class Profile extends Component {
                         {/*<DropdownMenu />*/}
                         <ButtonToolbar>
                             <DropdownButton>
-                                <MenuItem eventKey="1"><Link to='/header'>Header</Link></MenuItem>
+                                <MenuItem eventKey="1"><Link to='/'>Home</Link></MenuItem>
                                 <MenuItem eventKey="1"><Link to='/profile'>Profile</Link></MenuItem>
                                 <MenuItem eventKey="1"><Link to='/images'>Images</Link></MenuItem>
                                 <MenuItem divider />

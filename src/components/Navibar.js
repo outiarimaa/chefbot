@@ -28,16 +28,16 @@ class Navibar extends Component {
         {this.state.user 
           ?
             <div>
-            <ButtonToolbar>
+              <ButtonToolbar>
                 <DropdownButton>
-                    <MenuItem eventKey="1"><Link to='/'>Header</Link></MenuItem>
-                    <MenuItem eventKey="2"><Link to='/profile'>Profile</Link></MenuItem>
-                    <MenuItem eventKey="3"><Link to='/images'>Images</Link></MenuItem>
-                    <MenuItem divider />
-                    <MenuItem eventKey="4" onClick={this.props.logout}>Logout</MenuItem>
+                  <MenuItem eventKey="1"><Link to='/'>Home</Link></MenuItem>
+                  <MenuItem eventKey="1"><Link to='/profile'>Profile</Link></MenuItem>
+                  <MenuItem eventKey="1"><Link to='/images'>Images</Link></MenuItem>
+                  <MenuItem divider />
+                  <MenuItem eventKey="4" onClick={this.props.logout}>Logout</MenuItem>
                 </DropdownButton>
-            </ButtonToolbar>
-                <p className="signin">Tervetuloa {this.state.user.displayName}!</p>
+              </ButtonToolbar>
+              <p className="signin">Tervetuloa {this.state.user.displayName}!</p>
             </div>
           :
             ''
