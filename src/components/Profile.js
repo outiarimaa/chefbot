@@ -1,8 +1,10 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import '../App.css';
+import { NavItem, Dropdown, Button } from 'react-materialize';
 import { ButtonToolbar, MenuItem, DropdownButton, Glyphicon} from 'react-bootstrap';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
-import DropdownMenu from "./DropdownMenu";
-import {auth, googleProvider, facebookProvider} from '../firebase.js';
+import { auth } from '../firebase.js';
+// import DropdownMenu from "./DropdownMenu";
 
 class Profile extends Component {
     constructor(props) {
@@ -22,14 +24,40 @@ class Profile extends Component {
     }
 
     render() {
-
+        console.log('navissa', this.state.user);
         return (
+
+
             <div>
-                <h1>Proffiili</h1>
-                <DropdownMenu />
+                {this.state.user
+                    ?
+                    <div>
+                        {/*<DropdownMenu />*/}
+                        <ButtonToolbar>
+                            <DropdownButton>
+                                <MenuItem eventKey="1"><Link to='/header'>Header</Link></MenuItem>
+                                <MenuItem eventKey="1"><Link to='/profile'>Profile</Link></MenuItem>
+                                <MenuItem eventKey="1"><Link to='/images'>Images</Link></MenuItem>
+                                <MenuItem divider />
+                                <MenuItem eventKey="4" onClick={this.props.logout}>Logout</MenuItem>
+                            </DropdownButton>
+                        </ButtonToolbar>
+                        <p className="signin">User profile for {this.state.user.displayName}.</p>
+                        <p className="signin">Email: {this.state.user.lastSignInTime}</p>
+                        {/*                <ul>
+                    <li><Link to='/header'>Header</Link></li>
+                    <li><Link to='/profile'>Profile</Link></li>
+                    <li><Link to='/images'>Images</Link></li>
+                </ul>*/}
+                    </div>
 
+
+
+
+                    :
+                    <p></p>
+                }
             </div>
-
         );
     }
 }
