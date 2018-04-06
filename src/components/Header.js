@@ -1,12 +1,10 @@
-import React, {Component} from 'react';
-import {auth, googleProvider, facebookProvider} from '../firebase.js';
+import React, { Component } from 'react';
+import { auth } from '../firebase.js';
 import '../App.css';
 import RecipeList from './RecipeList';
-/* import { Grid, Row, Col } from 'react-bootstrap'; */
-import {Row, Col} from 'react-materialize';
+import { Row, Col } from 'react-materialize';
 import Navibar from './Navibar';
 import Login from './Login';
-import {Button} from 'react-materialize';
 import MediaQuery from 'react-responsive';
 
 class Header extends Component {
@@ -74,16 +72,7 @@ class Header extends Component {
                         </div>
                         :
                         <div>
-
                             <Login/>
-                           {/* <div>
-
-                                <Button waves='light' className='red' onClick={this.loginGoogle}>Login with
-                                    Google</Button>
-                                <Button waves='light' className='blue' onClick={this.loginFacebook}>Login with
-                                    Facebook</Button>
-                                <p>Loggaa sisään, niin näätki jotain</p>
-                            </div>*/}
                         </div>
                     }
                 </div>
