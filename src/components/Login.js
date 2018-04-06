@@ -31,8 +31,8 @@ class Login extends Component {
 
             <div className='container'>
                 <div className='row'>
-                    <div className='col-md-2'></div>
-                    <div className='col-md-4'>
+
+                    <div className='col-lg-12'>
                         <div className='introduction'>
                             <h1>Welcome to ChefBot</h1>
                             <img className="picture"
@@ -42,7 +42,9 @@ class Login extends Component {
                                 better.</p>
                         </div>
                     </div>
-                    <div className='col-md-4'>
+                </div>
+                <div className='row'>
+                    <div className='col-lg-12'>
                         <div className='signin'>
                             <div className="loginbuttons">
                                 <div><Button waves='light' id='google-button' onClick={this.loginGoogle}>Login with
@@ -54,7 +56,6 @@ class Login extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className='col-md-2'></div>
                 </div>
             </div>
         );
