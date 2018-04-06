@@ -4,12 +4,29 @@ import {BrowserRouter, Route, Link} from 'react-router-dom';
 import DropdownMenu from "./DropdownMenu";
 
 class Profile extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            user: null
+        };
+    }
+
+    componentDidMount() {
+        auth.onAuthStateChanged(user => {
+            user
+                ? this.setState(() => ({ user }))
+                : this.setState(() => ({ user: null }))
+        });
+    }
 
     render() {
+
         return (
             <div>
                 <h1>Proffiili</h1>
                 <DropdownMenu />
+                
             </div>
 
         );
