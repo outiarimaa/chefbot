@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
-import { NavItem, Dropdown, Button } from 'react-materialize';
-import { ButtonToolbar, MenuItem, DropdownButton, Glyphicon} from 'react-bootstrap';
-import {BrowserRouter, Route, Link} from 'react-router-dom';
+import { ButtonToolbar, MenuItem, DropdownButton } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { auth } from '../firebase.js';
 // import DropdownMenu from "./DropdownMenu";
 
