@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import { NavItem, Dropdown, Button } from 'react-materialize';
 import { ButtonToolbar, MenuItem, DropdownButton, Glyphicon} from 'react-bootstrap';
+import {BrowserRouter, Route, Link} from 'react-router-dom';
 import { auth } from '../firebase.js';
 
 class Navibar extends Component {
@@ -32,12 +33,16 @@ class Navibar extends Component {
             <div>
             <ButtonToolbar>
                 <DropdownButton>
-                    <MenuItem eventKey="1">Action</MenuItem>
+                    <MenuItem eventKey="1">Lol</MenuItem>
                     <MenuItem divider />
                     <MenuItem eventKey="4" onClick={this.props.logout}>Logout</MenuItem>
                 </DropdownButton>
             </ButtonToolbar>
                 <p className="signin">Tervetuloa {this.state.user.displayName}!</p>
+                <ul>
+                    <li><Link to='/profile'>Profile</Link></li>
+                    <li>Heya</li>
+                </ul>
             </div>
 
 
