@@ -2,7 +2,7 @@
 
 @media (min-width: 0) {
     body {
-        background: url("../resources/static/images/covermobile.jpg");
+        /*background: url("../resources/static/images/covermobile.jpg");*/
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
@@ -15,7 +15,7 @@
 
 @media (min-width: 800px) {
     body {
-        background: url("../resources/static/images/logincover.jpg");
+        /*background: url("../resources/static/images/logincover.jpg");*/
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
