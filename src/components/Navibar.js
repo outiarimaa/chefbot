@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+/* import React, { Component } from 'react';
 import '../App.css';
 import { ButtonToolbar, MenuItem, DropdownButton } from 'react-bootstrap';
 import { Link} from 'react-router-dom';
@@ -31,5 +31,5 @@ class Navibar extends Component {
   }
 }
 
-export default Navibar;
+export default Navibar; */
 

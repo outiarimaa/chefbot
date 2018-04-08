@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+/* import React, {Component} from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Profile from './Profile';
 import ImageGallery from './ImageGallery';
@@ -21,4 +21,4 @@ class ShowPage extends Component {
 
 
 export default ShowPage;
-
+ */

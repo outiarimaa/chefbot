@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import ShowPage from './components/ShowPage';
+import Header from './components/Header';
 
 class App extends Component {
 
   render() {
     return (
       <div>
-        <ShowPage />
+        <Header />
       </div>
     );
   }
