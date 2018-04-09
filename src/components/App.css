@@ -137,3 +137,10 @@ font-family: 'Cabin Sketch', cursive;
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
+
+#favtitle {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+

@@ -7,6 +7,7 @@ import Login from './Login';
 import MediaQuery from 'react-responsive';
 import ChefBot from './ChefBot.js';
 import Profile from './Profile.js';
+import { Grid, Thumbnail, Image } from 'react-bootstrap';
 import Navibar from './Navibar';
 import { ButtonToolbar, MenuItem, DropdownButton } from 'react-bootstrap';
 
@@ -92,25 +93,81 @@ render() {
                                 </div>
                             </div>
                         </div>
-                            <div style={ shown }>
-                                <div className="main">
-                                    <div>
-                                        <div class="container-fluid bg-1 text-center">
+                        <div style={ shown }>
+                            <div className="main">
+                                <div>
+                                    <div class="container-fluid bg-1 text-center">
                                         <h3 id="cheftitle">CHEF<br/>BOT</h3>
+                                        </div>
 
-                                    </div>
-                                    <div class="container-fluid bg-2">
-                                        {/*<h3>TALK TO ME!</h3><br/>*/}
-                            
-                                </div>
-                            </div>
+
+
+                        <div class="container-fluid bg-3 text-center">
+                            <p id="favtitle">Our all-time favorites</p>
+                            <Grid>
+                                <Row>
+                                    <Col xs={6} md={4}>
+                                        <a href="#johanna" data-toggle="collapse">
+                                            <Image src="https://images.pexels.com/photos/46247/thai-food-noodle-fried-noodles-meal-46247.jpeg?cs=srgb&dl=chopsticks-cuisine-dinner-46247.jpg&fm=jpg" circle width="200" height="120"/></a>
+                                        <div id="johanna" class="collapse">
+                                            <h4>Johanna<br/>
+                                            My favorite is<br/>
+                                            chicken wok!</h4>
+                                        </div>
+                                    </Col>
+                                    <Col xs={6} md={4}>
+                                        <a href="#juukeli" data-toggle="collapse">
+                                        <Image src="https://img.taste.com.au/NtQQVTyu/taste/2016/11/gluten-free-lasagne-93960-1.jpeg" circle width="200" height="120" /></a>
+                                        <div id="juukeli" class="collapse">
+                                            <h4>Juuso<br/>
+                                                I love<br/>
+                                                lasagne!</h4>
+                                        </div>
+                                    </Col>
+                                    <Col xs={6} md={4}>
+                                        <a href="#outi" data-toggle="collapse">
+                                        <Image src="https://images.pexels.com/photos/262982/pexels-photo-262982.jpeg?cs=srgb&dl=cooking-cuisine-delicious-262982.jpg&fm=jpg" circle width="200" height="120" /></a>
+                                        <div id="outi" class="collapse">
+                                            <h4>Outi<br/>
+                                                My favorite<br/>is soy<br/>
+                                                glazed salmon!</h4>
+                                        </div>
+                                    </Col>
+                                    <Col xs={6} md={4}>
+                                        <a href="#aleksi" data-toggle="collapse">
+                                        <Image src="https://images.pexels.com/photos/723198/pexels-photo-723198.jpeg?cs=srgb&dl=blur-close-up-cooking-723198.jpg&fm=jpg" circle width="200" height="120" /></a>
+                                        <div id="aleksi" class="collapse">
+                                            <h4>Aleksi<br/>
+                                                My <br/>all-time<br/> fav recipe<br/>
+                                                is rice<br/>
+                                                and beans!</h4>
+                                        </div>
+                                    </Col>
+                                    <Col xs={6} md={4}>
+                                        <a href="#jani" data-toggle="collapse">
+                                        <Image src="https://images.pexels.com/photos/722670/spaghetti-bolognese-food-rustic-722670.jpeg?cs=srgb&dl=board-bolognese-carbohydrates-722670.jpg&fm=jpg" circle width="200" height="120" /></a>
+                                        <div id="jani" class="collapse">
+                                            <h4>Jani<br/>
+                                                I love<br/>
+                                                spaghetti bolognese!</h4>
+                                        </div>
+                                    </Col>
+                                </Row>
+                            </Grid>
                         </div>
-                    </div>
+                                </div>
+
+                        </div>
+                        </div>
+
+
+
                 <div style={ hidden }>
+
                     <Profile state={this.state} />
-                </div>        
+                    </div>        
                 </div>
-                    :
+                :
                     <div>
                         <Login/>
                     </div>
