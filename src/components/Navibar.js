@@ -1,37 +1,28 @@
-import React, { Component } from 'react';
-import './App.css';
-import { NavItem, Dropdown, Button } from 'react-materialize';
-import { ButtonToolbar, MenuItem, DropdownButton, Glyphicon} from 'react-bootstrap';
-import {BrowserRouter, Route, Link} from 'react-router-dom';
-import { auth } from '../firebase.js';
-// import DropdownMenu from "./DropdownMenu";
+{/*<<<<<<< HEAD*/}
+{/*import React, { Component } from 'react';*/}
+{/*import './App.css';*/}
+{/*import { NavItem, Dropdown, Button } from 'react-materialize';*/}
+{/*import { ButtonToolbar, MenuItem, DropdownButton, Glyphicon} from 'react-bootstrap';*/}
+{/*import {BrowserRouter, Route, Link} from 'react-router-dom';*/}
+{/*import { auth } from '../firebase.js';*/}
+{/*// import DropdownMenu from "./DropdownMenu";*/}
+{/*=======*/}
+/* import React, { Component } from 'react';
+import '../App.css';
+import { ButtonToolbar, MenuItem, DropdownButton } from 'react-bootstrap';
+import { Link} from 'react-router-dom';
+>>>>>>> 6e5dca46746916e3e98deb46ca1f317a3d7cb734
 
 class Navibar extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      user: null
-    };
-  }
-
-  componentDidMount() {
-    auth.onAuthStateChanged(user => {
-      user
-      ? this.setState(() => ({ user }))
-      : this.setState(() => ({ user: null }))
-    });
-  }
 
   render() {
-      console.log('navissa', this.state.user);
+      console.log('navissa', this.props.user);
     return (
-
-
       <div>
-        {this.state.user 
+        {this.props.user 
           ?
             <div>
+<<<<<<< HEAD
                 <nav class="navbar navbar-default">
                     <div class="container">
                         <div class="navbar-header">
@@ -53,13 +44,26 @@ class Navibar extends Component {
                 </nav>
             </div>
 
+=======
+              <ButtonToolbar>
+                <DropdownButton>
+                  <MenuItem eventKey="1"><Link to='/'>Home</Link></MenuItem>
+                  <MenuItem eventKey="1"><Link to='/profile'>Profile</Link></MenuItem>
+                  <MenuItem eventKey="1"><Link to='/images'>Images</Link></MenuItem>
+                  <MenuItem divider />
+                  <MenuItem eventKey="4" onClick={this.props.logout}>Logout</MenuItem>
+                </DropdownButton>
+              </ButtonToolbar>
+              <p className="signin">Tervetuloa {this.props.user.displayName}!</p>
+            </div>
+>>>>>>> 6e5dca46746916e3e98deb46ca1f317a3d7cb734
           :
-            <p></p>
+            ''
         }
       </div>
     );
   }
 }
 
-export default Navibar;
+export default Navibar; */
 

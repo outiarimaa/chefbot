@@ -1,35 +1,18 @@
-import React, {Component} from 'react';
-import { ButtonToolbar, MenuItem, DropdownButton, Glyphicon} from 'react-bootstrap';
-import {BrowserRouter, Route, Link} from 'react-router-dom';
-import DropdownMenu from "./DropdownMenu";
-import {auth, googleProvider, facebookProvider} from '../firebase.js';
+import React, { Component } from 'react';
+import { Row } from 'react-materialize';
+import './App.css';
 
 class Profile extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            user: null
-        };
-    }
-
-    componentDidMount() {
-        auth.onAuthStateChanged(user => {
-            user
-                ? this.setState(() => ({ user }))
-                : this.setState(() => ({ user: null }))
-        });
-    }
 
     render() {
-
+        const user = this.props.state.user;
         return (
-            <div>
-                <h1>Proffiili</h1>
-                <DropdownMenu />
-
-            </div>
-
+            <Row id="aleksi">
+                <div>
+                    <p>User: {user.displayName}</p>
+                    <p>Email: {user.email}</p>
+                </div>                                   
+            </Row>    
         );
     }
 }
