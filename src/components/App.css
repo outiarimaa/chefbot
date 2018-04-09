@@ -137,3 +137,27 @@ font-family: 'Cabin Sketch', cursive;
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
+
+img {
+  width: 40%;
+}
+
+.carousel-inner {
+  background-color: #C1E0FF;
+}
+
+.carousel-caption {
+  font-size: 2em;
+  right: 10%;
+  left: 60%;
+  top: 30%;
+  bottom: 30%;
+  text-align: left;
+  text-shadow: none;
+}
+.carousel-indicators{
+  font-size: 2em;
+  bottom: -1%;
+  text-align: left;
+  text-shadow: none;
+}
