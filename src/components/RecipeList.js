@@ -78,7 +78,7 @@ export default class RecipeList extends React.Component {
                         <Button className="formbutton" bsStyle="info" type={'submit'}>GO!</Button>
                     </form>
                 </div>
-                <div className="boksi">
+                <div className="boksi2">
                     {hakutulos}
                 </div>
             </div>
