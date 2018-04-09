@@ -23,7 +23,7 @@ class Profile extends Component {
         const itemsRef = firebase.database().ref('items');
         const item = {
             title: this.state.currentItem,
-            user: this.state.user.displayName || this.state.user.email
+            user: this.state.user.displayName
         }
         itemsRef.push(item);
         this.setState({
@@ -73,10 +73,13 @@ class Profile extends Component {
                        <div className="wrapper">
                            <ul>
                                {this.state.items.map((item) => {
+
                                    return (
                                        <li key={item.id}>
-                                           <p>{item.title}</p>
-
+                                          <li>
+                                               {item.user === this.state.user.displayName ?
+                                                   item.title : null}
+                                           </li>
                                        </li>
                                    )
                                })}
