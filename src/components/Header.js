@@ -7,6 +7,7 @@ import Login from './Login';
 import MediaQuery from 'react-responsive';
 import ChefBot from './ChefBot.js';
 import Profile from './Profile.js';
+import { Grid, Thumbnail, Image } from 'react-bootstrap';
 import Navibar from './Navibar';
 import { ButtonToolbar, MenuItem, DropdownButton } from 'react-bootstrap';
 
@@ -105,7 +106,28 @@ render() {
 
 
                         <div class="container-fluid bg-3 text-center">
-                            <p>Our all-time favorites</p>
+                            <p id="favtitle">Our all-time favorites</p>
+                            <Grid>
+                                <Row>
+                                    <Col xs={6} md={4}>
+                                        <Image src="https://images.pexels.com/photos/46247/thai-food-noodle-fried-noodles-meal-46247.jpeg?cs=srgb&dl=chopsticks-cuisine-dinner-46247.jpg&fm=jpg" circle width="200" height="120"/>
+                                    </Col>
+                                    <Col xs={6} md={4}>
+                                        <Image src="https://img.taste.com.au/NtQQVTyu/taste/2016/11/gluten-free-lasagne-93960-1.jpeg" circle width="200" height="120" />
+                                    </Col>
+                                    <Col xs={6} md={4}>
+                                        <Image src="https://images.pexels.com/photos/262982/pexels-photo-262982.jpeg?cs=srgb&dl=cooking-cuisine-delicious-262982.jpg&fm=jpg" circle width="200" height="120" />
+                                    </Col>
+                                    <Col xs={6} md={4}>
+                                        <Image src="https://images.pexels.com/photos/723198/pexels-photo-723198.jpeg?cs=srgb&dl=blur-close-up-cooking-723198.jpg&fm=jpg" circle width="200" height="120" />
+                                    </Col>
+                                    <Col xs={6} md={4}>
+                                        <Image src="https://images.pexels.com/photos/722670/spaghetti-bolognese-food-rustic-722670.jpeg?cs=srgb&dl=board-bolognese-carbohydrates-722670.jpg&fm=jpg" circle width="200" height="120" />
+                                    </Col>
+                                </Row>
+                            </Grid>
+
+
                         </div>
 
                         <div class="container-fluid bg-2">
@@ -113,7 +135,7 @@ render() {
 
                         </div>
                 </div>
-                  
+
 
                 <div style={ hidden }>
                     <Profile state={this.state} />
