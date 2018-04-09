@@ -146,13 +146,16 @@ render() {
                                 <span className="icon-bar"></span>
                                 <span className="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" onClick={this.logout}>Logout</a>
+                            <a className="navbar-brand" onClick={this.logout}>Logout</a>
                         </div>
-                        <div class="collapse navbar-collapse" id="myNavbar">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#">TALK TO ME!</a></li>
-                                <li><a href="#">PHOTOGALLERY</a></li>
-                                <li><a href="#">PROFILE</a></li>
+                        <div className="collapse navbar-collapse" id="myNavbar">
+                            <ul className="nav navbar-nav navbar-right">
+                                <li>
+                                    <div>
+                                        <div className="toggle-home-profile" style={ shown } onClick={this.toggle.bind(this)}>Profile</div>
+                                        <div className="toggle-home-profile" style={ hidden } onClick={this.toggle.bind(this)}>Home</div>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
