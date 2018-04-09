@@ -111,7 +111,8 @@ render() {
 
 
 
-                        <div class="container-fluid bg-3 text-center">
+                        <div class="container-fluid bg-2 text-center">
+
                             <p id="favtitle">Our all-time favorites</p>
                             <Grid className="testi">
                                 <Row>

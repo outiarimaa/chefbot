@@ -93,9 +93,8 @@
 }
 
 .bg-2 {
-  background-color: white; /* Dark Blue */
-  color: #ffffff;
-  margin-bottom: 50px;
+  background-color: #F9F9F9; /* Dark Blue */
+  color: #778899;
 }
 
 .bg-5 {
@@ -104,7 +103,9 @@
 }
 
 .bg-4 {
-  background-color: white;
+  background: url("../resources/static/images/kukka.jpg");
+  background-size: cover;
+
 }
 
 .toggle-home-profile {
