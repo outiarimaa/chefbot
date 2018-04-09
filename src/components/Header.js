@@ -150,8 +150,6 @@ render() {
                         </div>
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#">TALK TO ME!</a></li>
-                                <li><a href="#">PHOTOGALLERY</a></li>
                                 <li><a href="#">PROFILE</a></li>
                             </ul>
                         </div>
@@ -177,9 +175,50 @@ render() {
 
                         </div>
 
+
+
+                        <div class="container-fluid bg-3 text-center">
+                                <br/>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <a href="#demo" data-toggle="collapse">
+                                                <img src="https://images.pexels.com/photos/47725/hamburger-food-meal-tasty-47725.jpeg?cs=srgb&dl=basil-beef-delicious-47725.jpg&fm=jpg" class="img-circle person" alt="Random Name" width="255" height="150"/>
+                                            </a>
+                                            <div id="demo" class="collapse">
+                                                <p>Guitarist and Lead Vocalist</p>
+                                                <p>Loves long walks on the beach</p>
+                                                <p>Member since 1988</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <a href="#demo2" data-toggle="collapse">
+                                                <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255"/>
+                                            </a>
+                                            <div id="demo2" class="collapse">
+                                                <p>Drummer</p>
+                                                <p>Loves drummin'</p>
+                                                <p>Member since 1988</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <a href="#demo3" data-toggle="collapse">
+                                                <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255"/>
+                                            </a>
+                                            <div id="demo3" class="collapse">
+                                                <p>Bass player</p>
+                                                <p>Loves math</p>
+                                                <p>Member since 2005</p>
+                                            </div>
+                                        </div>
+                            </div>
+                        </div>
+
+
+
                         <div class="container-fluid bg-2">
                             {/*<h3>TALK TO ME!</h3><br/>*/}
-                            
+                            <RecipeList/>
+
                         </div>
 
 
