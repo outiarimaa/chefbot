@@ -160,6 +160,7 @@ render() {
                         </div>
                     </div>
                 </nav>
+                <div style={ shown }>
                         <div class="sidenav">
                             <div className="Chefbot-div">
                                 <iframe
@@ -171,7 +172,8 @@ render() {
                             </div>
                         </div>
                     </div>
-
+                </div>
+                <div style={ shown }>
                     <div className="main">
 
                     <div>
@@ -184,10 +186,14 @@ render() {
                             {/*<h3>TALK TO ME!</h3><br/>*/}
                             
                         </div>
+                </div>
 
 
                     </div>
                     </div>
+                <div style={ hidden }>
+                    <Profile state={this.state} />
+                </div>        
                 </div>
                     :
                     <div>
