@@ -10,8 +10,10 @@ class Profile extends Component {
         return (
             <Row id="aleksi">
                 <div>
-                    <p>User: {user.displayName}</p>
-                    <p>Email: {user.email}</p>
+                    <h1>Profile for {user.displayName}</h1>
+                    <p>Username: {user.displayName}</p>
+                    {user.email && <p>Email: {user.email}</p> || <p>Email: botlover@gmail.com</p>}
+
                 </div>                                   
             </Row>    
         );
