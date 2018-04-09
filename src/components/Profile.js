@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Row } from 'react-materialize';
-import firebase, { auth, provider } from '../firebase.js';
+import firebase, { auth } from '../firebase.js';
 import './App.css';
 
 class Profile extends Component {
@@ -54,10 +54,7 @@ class Profile extends Component {
             });
         });
     }
-/*    removeItem(itemId) {
-        const itemRef = firebase.database().ref(`/items/${itemId}`);
-        itemRef.remove();
-    }*/
+    
     render() {
         const user = this.props.state.user;
         console.log('Profiilipage', user);
@@ -75,12 +72,12 @@ class Profile extends Component {
                                {this.state.items.map((item) => {
 
                                    return (
-                                       <li key={item.id}>
+                                       <ul key={item.id}>
                                           <li>
                                                {item.user === this.state.user.displayName ?
                                                    item.title : null}
                                            </li>
-                                       </li>
+                                       </ul>
                                    )
                                })}
                            </ul>
