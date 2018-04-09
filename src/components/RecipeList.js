@@ -73,9 +73,9 @@ export default class RecipeList extends React.Component {
             <div>
                 <div className="boksi">
                     <form className={'formi'} onSubmit={this.handleSubmit_searchName}>
-                        <label className={'nameLabel'}>Search by name</label>
+                        <label className={'nameLabel'}>Search for a recipe</label>
                         <input type="text" onChange={this.handleChange_searchName} value={this.state.nameSearch}/>
-                        <Button className="formbutton" bsStyle="info" type={'submit'}>search</Button>
+                        <Button className="formbutton" bsStyle="info" type={'submit'}>GO!</Button>
                     </form>
                 </div>
                 <div className="boksi">

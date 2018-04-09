@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin+Sketch');
+@import url('https://fonts.googleapis.com/css?family=Handlee');
+@import url('https://fonts.googleapis.com/css?family=Yatra+One');
 
 .App {
   text-align: center;
@@ -93,6 +95,16 @@
 .bg-2 {
   background-color: white; /* Dark Blue */
   color: #ffffff;
+  margin-bottom: 50px;
+}
+
+.bg-5 {
+  background-color: #222222;
+  color: white;
+}
+
+.bg-4 {
+  background-color: white;
 }
 
 .toggle-home-profile {
@@ -139,8 +151,20 @@ font-family: 'Cabin Sketch', cursive;
 }
 
 #favtitle {
-  margin-top: 20px;
+  /*font-family: 'Handlee', cursive;*/
+  font-family: 'Yatra One', cursive;
+  font-size: 35px;
+  margin-top: 40px;
   margin-bottom: 30px;
 }
+
+.testi {
+  margin-bottom: 100px;
+}
+
+#storycb {
+  font-size: 15px;
+}
+
 
 

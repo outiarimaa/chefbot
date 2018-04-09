@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Yatra+One');
+
 body {
     /*background-color: gainsboro;*/
+
 }
 
 .boksi{
@@ -30,19 +33,21 @@ body {
 }
 
 .nameLabel {
+    font-family: 'Yatra One', cursive;
     margin-right: 41px;
     font-size: 1.2em;
+    color: lightslategrey;
 }
 
 .recipeLabel {
     margin-right: 10px;
-    font-size: 1.2em;
+    font-size: 20px;
 }
 
 .testi {
-    font-size: 1em;
+    font-size: 5px;
 }
 
 .formbutton {
-    background-color: rgb(17, 202, 17);
+    background-color: #CF1E3F;
 }

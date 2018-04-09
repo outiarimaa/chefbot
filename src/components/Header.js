@@ -100,13 +100,22 @@ render() {
                                         <h3 id="cheftitle">CHEF<br/>BOT</h3>
                                         </div>
 
+                                    {/*<div class="container-fluid bg-5 text-center">*/}
+                                        {/*<h2 id="whoiscb">Story of ChefBot</h2>*/}
+                                        {/*<p id="storycb">ChefBot is an intelligent chatbot, who can help <br/>*/}
+                                            {/*you to find delicious <br/>*/}
+                                            {/*recipes from a vast recipe database. <br/>*/}
+                                            {/*ChefBot is still a child and keeps on <br/>*/}
+                                            {/*learning in order to serve you better.</p>*/}
+                                    {/*</div>*/}
+
 
 
                         <div class="container-fluid bg-3 text-center">
                             <p id="favtitle">Our all-time favorites</p>
-                            <Grid>
+                            <Grid className="testi">
                                 <Row>
-                                    <Col xs={6} md={4}>
+                                    <Col xs={6} md={5}>
                                         <a href="#johanna" data-toggle="collapse">
                                             <Image src="https://images.pexels.com/photos/46247/thai-food-noodle-fried-noodles-meal-46247.jpeg?cs=srgb&dl=chopsticks-cuisine-dinner-46247.jpg&fm=jpg" circle width="200" height="120"/></a>
                                         <div id="johanna" class="collapse">
@@ -115,7 +124,7 @@ render() {
                                             chicken wok!</h4>
                                         </div>
                                     </Col>
-                                    <Col xs={6} md={4}>
+                                    <Col xs={6} md={5}>
                                         <a href="#juukeli" data-toggle="collapse">
                                         <Image src="https://img.taste.com.au/NtQQVTyu/taste/2016/11/gluten-free-lasagne-93960-1.jpeg" circle width="200" height="120" /></a>
                                         <div id="juukeli" class="collapse">
@@ -124,7 +133,7 @@ render() {
                                                 lasagne!</h4>
                                         </div>
                                     </Col>
-                                    <Col xs={6} md={4}>
+                                    <Col xs={6} md={5}>
                                         <a href="#outi" data-toggle="collapse">
                                         <Image src="https://images.pexels.com/photos/262982/pexels-photo-262982.jpeg?cs=srgb&dl=cooking-cuisine-delicious-262982.jpg&fm=jpg" circle width="200" height="120" /></a>
                                         <div id="outi" class="collapse">
@@ -133,17 +142,15 @@ render() {
                                                 glazed salmon!</h4>
                                         </div>
                                     </Col>
-                                    <Col xs={6} md={4}>
+                                    <Col xs={6} md={5}>
                                         <a href="#aleksi" data-toggle="collapse">
                                         <Image src="https://images.pexels.com/photos/723198/pexels-photo-723198.jpeg?cs=srgb&dl=blur-close-up-cooking-723198.jpg&fm=jpg" circle width="200" height="120" /></a>
                                         <div id="aleksi" class="collapse">
-                                            <h4>Aleksi<br/>
-                                                My <br/>all-time<br/> fav recipe<br/>
-                                                is rice<br/>
-                                                and beans!</h4>
+                                            <h4>Allu<br/>
+                                                turpa kiinni</h4>
                                         </div>
                                     </Col>
-                                    <Col xs={6} md={4}>
+                                    <Col xs={6} md={5}>
                                         <a href="#jani" data-toggle="collapse">
                                         <Image src="https://images.pexels.com/photos/722670/spaghetti-bolognese-food-rustic-722670.jpeg?cs=srgb&dl=board-bolognese-carbohydrates-722670.jpg&fm=jpg" circle width="200" height="120" /></a>
                                         <div id="jani" class="collapse">
@@ -155,7 +162,12 @@ render() {
                                 </Row>
                             </Grid>
                         </div>
+                                    <div class="container-fluid bg-4 text-center">
+                                        <RecipeList/>
+
+                                    </div>
                                 </div>
+
 
                         </div>
                         </div>
