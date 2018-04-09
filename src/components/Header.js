@@ -57,7 +57,6 @@ class Header extends Component {
                 <div>
                     {this.state.user ?
                         <div>
-<<<<<<< HEAD
                             <div class="container-fluid bg-1 text-center">
                                 <h3 id="cheftitle" class="margin">CHEF<br/>BOT</h3>
 
@@ -83,7 +82,6 @@ class Header extends Component {
 
                             <Login/>
 
-=======
                             <div>
                                 <ButtonToolbar>
                                     <DropdownButton title="" id="dropdown">
@@ -117,7 +115,6 @@ class Header extends Component {
                         :
                         <div>
                             <Login />
->>>>>>> 6e5dca46746916e3e98deb46ca1f317a3d7cb734
                         </div>
                     }
                 </div>

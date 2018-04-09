@@ -1,4 +1,3 @@
-{/*<<<<<<< HEAD*/}
 {/*import React, { Component } from 'react';*/}
 {/*import './App.css';*/}
 {/*import { NavItem, Dropdown, Button } from 'react-materialize';*/}
@@ -6,12 +5,10 @@
 {/*import {BrowserRouter, Route, Link} from 'react-router-dom';*/}
 {/*import { auth } from '../firebase.js';*/}
 {/*// import DropdownMenu from "./DropdownMenu";*/}
-{/*=======*/}
 /* import React, { Component } from 'react';
 import '../App.css';
 import { ButtonToolbar, MenuItem, DropdownButton } from 'react-bootstrap';
 import { Link} from 'react-router-dom';
->>>>>>> 6e5dca46746916e3e98deb46ca1f317a3d7cb734
 
 class Navibar extends Component {
 
@@ -22,7 +19,6 @@ class Navibar extends Component {
         {this.props.user 
           ?
             <div>
-<<<<<<< HEAD
                 <nav class="navbar navbar-default">
                     <div class="container">
                         <div class="navbar-header">
@@ -44,7 +40,6 @@ class Navibar extends Component {
                 </nav>
             </div>
 
-=======
               <ButtonToolbar>
                 <DropdownButton>
                   <MenuItem eventKey="1"><Link to='/'>Home</Link></MenuItem>
@@ -56,7 +51,6 @@ class Navibar extends Component {
               </ButtonToolbar>
               <p className="signin">Tervetuloa {this.props.user.displayName}!</p>
             </div>
->>>>>>> 6e5dca46746916e3e98deb46ca1f317a3d7cb734
           :
             ''
         }
