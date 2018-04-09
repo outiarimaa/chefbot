@@ -66,7 +66,7 @@ render() {
                                             <span className="icon-bar"></span>
                                             <span className="icon-bar"></span>
                                         </button>
-                                        <a className="navbar-brand" style={ shown } onClick={this.logout}>Logout</a>
+                                        <a className="navbar-brand" onClick={this.logout}>Logout</a>
                                     </div>
                                     <div className="collapse navbar-collapse" id="myNavbar">
                                         <ul className="nav navbar-nav navbar-right">
