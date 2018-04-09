@@ -8,7 +8,8 @@ class Profile extends Component {
         super(props);
         this.state = {
             currentItem: '',
-            items: []
+            items: [],
+            user: null
         }
     }
 
@@ -21,15 +22,22 @@ class Profile extends Component {
         e.preventDefault();
         const itemsRef = firebase.database().ref('items');
         const item = {
-            title: this.state.currentItem
+            title: this.state.currentItem,
+            user: this.state.user.displayName || this.state.user.email
         }
         itemsRef.push(item);
         this.setState({
-            currentItem: ''
+            currentItem: '',
+            username: ''
         });
     }
 
     componentDidMount() {
+        auth.onAuthStateChanged((user) => {
+            if (user) {
+              this.setState({ user });
+            } 
+          });
         const itemsRef = firebase.database().ref('items');
         itemsRef.on('value', (snapshot) => {
             let items = snapshot.val();
@@ -38,6 +46,7 @@ class Profile extends Component {
                 newState.push({
                     id: item,
                     title: items[item].title,
+                    user: items[item].user
                 });
             }
             this.setState({
@@ -60,6 +69,20 @@ class Profile extends Component {
                     <p>Username: {user.displayName}</p>
                     {(user.email && <p>Email: {user.email}</p>) || <p>Email: botlover@gmail.com</p>}
                     <h3>Food allergies</h3>
+                    <section className='display-item'>
+                       <div className="wrapper">
+                           <ul>
+                               {this.state.items.map((item) => {
+                                   return (
+                                       <li key={item.id}>
+                                           <p>{item.title}</p>
+
+                                       </li>
+                                   )
+                               })}
+                           </ul>
+                       </div>
+                    </section>
                     <form onSubmit={this.handleSubmit}>
                         <input type="text" name="currentItem" placeholder="What are you allergic to?" onChange={this.handleChange} />
                         <button>Add allergy</button>
