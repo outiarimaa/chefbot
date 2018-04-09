@@ -30,14 +30,18 @@ class ChefBot extends Component {
         </a>
         <p>Show/Hide</p>
         <div style={shown}>
-          <div className="Chefbot-div">
-            <iframe
-              title="chefbot"
-              width="100%"
-              height="100%"
-              src="https://console.dialogflow.com/api-client/demo/embedded/69d0c8a7-3ee8-444a-afb5-a514fb6a3bf1"
-            />
-          </div>
+        <div class="container-fluid bg-2 text-center">
+            <h3>TALK TO ME!</h3><br/>
+
+            <div className="Chefbot-div">
+                <iframe
+                title="chefbot"
+                width="70%"
+                height="100%"
+                src="https://console.dialogflow.com/api-client/demo/embedded/69d0c8a7-3ee8-444a-afb5-a514fb6a3bf1">
+                </iframe>
+                </div>
+            </div>
         </div>
       </div>
     );

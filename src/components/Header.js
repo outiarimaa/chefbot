@@ -1,4 +1,3 @@
-
 import React, {Component} from 'react';
 import {auth, googleProvider, facebookProvider} from '../firebase.js';
 import './App.css';
@@ -124,6 +123,13 @@ class Header extends Component {
 } */
 
 render() {
+    let shown = {
+        display: this.state.shown ? "block" : "none"
+    };
+    
+    let hidden = {
+        display: this.state.shown ? "none" : "block"
+    }
     return (
         <div>
             <div>
@@ -161,15 +167,15 @@ render() {
                         <div class="container-fluid bg-2 text-center">
                             <h3>TALK TO ME!</h3><br/>
 
-                                    <div className="Chefbot-div">
+                                <div className="Chefbot-div">
                                     <iframe
                                     title="chefbot"
                                     width="70%"
                                     height="100%"
                                     src="https://console.dialogflow.com/api-client/demo/embedded/69d0c8a7-3ee8-444a-afb5-a514fb6a3bf1">
                                     </iframe>
-                                    </div>
                                 </div>
+                        </div>
 
 
                     </div>
