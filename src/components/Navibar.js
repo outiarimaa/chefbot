@@ -44,33 +44,14 @@ class Navibar extends Component {
                         </div>
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#">PROFILE</a></li>
+                                <li><a href="#">TALK TO ME!</a></li>
                                 <li><a href="#">PHOTOGALLERY</a></li>
-                                <li><a href="#">ACTIVITY</a></li>
+                                <li><a href="#">PROFILE</a></li>
                             </ul>
                         </div>
                     </div>
                 </nav>
-              {/*<DropdownMenu />*/}
-            {/*<ButtonToolbar>*/}
-                {/*<DropdownButton>*/}
-                    {/*<MenuItem eventKey="1"><Link to='/header'>Header</Link></MenuItem>*/}
-                    {/*<MenuItem eventKey="1"><Link to='/profile'>Profile</Link></MenuItem>*/}
-                    {/*<MenuItem eventKey="1"><Link to='/images'>Images</Link></MenuItem>*/}
-                    {/*<MenuItem divider />*/}
-                    {/*<MenuItem eventKey="4" onClick={this.props.logout}>Logout</MenuItem>*/}
-                {/*</DropdownButton>*/}
-            {/*</ButtonToolbar>*/}
-                {/*<p className="signin">Tervetuloa {this.state.user.displayName}!</p>*/}
-{/*                <ul>
-                    <li><Link to='/header'>Header</Link></li>
-                    <li><Link to='/profile'>Profile</Link></li>
-                    <li><Link to='/images'>Images</Link></li>
-                </ul>*/}
             </div>
-
-
-
 
           :
             <p></p>

@@ -28,6 +28,7 @@
   width: 100%;
   height: 25vw;
   margin: 5%;
+  margin-right: 10%;
 
 }
 
@@ -72,7 +73,7 @@
   border-collapse: collapse;
 }
 
-.bg-3 {
+.bg-2 {
   background-color: #474e5d; /* Dark Blue */
   color: #ffffff;
 }

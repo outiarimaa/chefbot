@@ -44,54 +44,29 @@ class Header extends Component {
                         <div>
                             <div class="container-fluid bg-1 text-center">
                                 <h3 id="cheftitle" class="margin">CHEF<br/>BOT</h3>
-                                    {/*<h3>I'll help you to find delicious recipes!</h3>*/}
+
                             </div>
 
-                            <div class="container-fluid bg-3 text-center">
-                                <h3>Bla bla</h3><br/>
-                                <div class="row">
-                                    <div class="col-sm-6">
+                            <div class="container-fluid bg-2 text-center">
+                                <h3>TALK TO ME!</h3><br/>
+
                                         <div className="Chefbot-div">
                                         <iframe
                                         title="chefbot"
-                                        width="100%"
+                                        width="70%"
                                         height="100%"
                                         src="https://console.dialogflow.com/api-client/demo/embedded/69d0c8a7-3ee8-444a-afb5-a514fb6a3bf1">
                                         </iframe>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <p>Tähän reseptihaku?</p>
-                                    </div>
-                                </div>
-                            </div>
 
-                                    {/*<div>*/}
-                                        {/*<div className="Chefbot-div">*/}
-                                            {/*<iframe*/}
-                                                {/*title="chefbot"*/}
-                                                {/*width="100%"*/}
-                                                {/*height="100%"*/}
-                                                {/*src="https://console.dialogflow.com/api-client/demo/embedded/69d0c8a7-3ee8-444a-afb5-a514fb6a3bf1">*/}
-                                            {/*</iframe>*/}
-                                        {/*</div>*/}
-                                    {/*</div>*/}
-
-                                    {/*<RecipeList/>*/}
 
                         </div>
                         :
                         <div>
 
                             <Login/>
-                           {/* <div>
 
-                                <Button waves='light' className='red' onClick={this.loginGoogle}>Login with
-                                    Google</Button>
-                                <Button waves='light' className='blue' onClick={this.loginFacebook}>Login with
-                                    Facebook</Button>
-                                <p>Loggaa sisään, niin näätki jotain</p>
-                            </div>*/}
                         </div>
                     }
                 </div>
