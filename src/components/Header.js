@@ -133,6 +133,7 @@ render() {
                 {this.state.user ?
                 
                 <div>
+
                     <div>
                 <nav class="navbar navbar-default">
                     <div class="container">
@@ -153,28 +154,33 @@ render() {
                         </div>
                     </div>
                 </nav>
-                    </div> 
+                        <div class="sidenav">
+                            <div className="Chefbot-div">
+                                <iframe
+                                    title="chefbot"
+                                    width="90%"
+                                    height="100%"
+                                    src="https://console.dialogflow.com/api-client/demo/embedded/69d0c8a7-3ee8-444a-afb5-a514fb6a3bf1">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="main">
 
                     <div>
                         <div class="container-fluid bg-1 text-center">
-                            <h3 id="cheftitle" class="margin">CHEF<br/>BOT</h3>
+                            <h3 id="cheftitle">CHEF<br/>BOT</h3>
 
                         </div>
 
-                        <div class="container-fluid bg-2 text-center">
-                            <h3>TALK TO ME!</h3><br/>
+                        <div class="container-fluid bg-2">
+                            {/*<h3>TALK TO ME!</h3><br/>*/}
 
-                                    <div className="Chefbot-div">
-                                    <iframe
-                                    title="chefbot"
-                                    width="70%"
-                                    height="100%"
-                                    src="https://console.dialogflow.com/api-client/demo/embedded/69d0c8a7-3ee8-444a-afb5-a514fb6a3bf1">
-                                    </iframe>
-                                    </div>
                                 </div>
 
 
+                    </div>
                     </div>
                 </div>
                     :
