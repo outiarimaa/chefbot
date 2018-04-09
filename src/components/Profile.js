@@ -9,7 +9,7 @@ class Profile extends Component {
         this.state = {
             currentItem: '',
             items: [],
-            user: null
+            user: ''
         }
     }
 
@@ -54,7 +54,7 @@ class Profile extends Component {
             });
         });
     }
-    
+
     render() {
         const user = this.props.state.user;
         console.log('Profiilipage', user);
