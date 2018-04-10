@@ -16,7 +16,7 @@ body {
 
 .formi {
     margin-top: 20px;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 
 
@@ -25,10 +25,12 @@ body {
 }
 
 .recipeDiv {
-    border: 1px solid white;
-    margin-bottom: 50px;
+    /*border: 1px solid white;*/
+    margin-bottom: 30px;
     padding: 14px;
-    /*background-color: rgb(224, 235, 235);*/
+    /*background-color: #F9F9F9;*/
+    background-color:rgba(192,192,192,0.3);
+    color: black;
     /*background-color: white;*/
 }
 
@@ -73,22 +75,9 @@ input[type=text] {
     margin-top: 80px;
 }
 
-/*input[type=text] {*/
-    /*text-align:center;*/
-    /*width: 300px;*/
-    /*height: 50px;*/
-    /*box-sizing: border-box;*/
-    /*border: 2px solid #ccc;*/
-    /*border-radius: 4px;*/
-    /*font-size: 16px;*/
-    /*background-color: white;*/
-    /*opacity: 0.8;*/
-    /*padding: 12px 20px 12px 40px;*/
-    /*-webkit-transition: width 0.4s ease-in-out;*/
-    /*transition: width 0.4s ease-in-out;*/
-/*}*/
+#ask {
+    color: darkslategrey;
+}
 
-/*input[type=text]:focus {*/
-    /*width: 100%;*/
-/*}*/
+
 
