@@ -65,11 +65,11 @@ class Profile extends Component {
                 <a><img id="kuva" src="http://i961.photobucket.com/albums/ae99/ofwdatabasekano/Female%20Chef_zpseexxr0yr.gif" border="0" alt="Female Chef jobs in Australia photo Female Chef_zpseexxr0yr.gif"></img></a>
                 <div>
                     <h1>Profile for {user.displayName}</h1>
-                    <h3>Basic information</h3>
+                    <h3>Basic Information</h3>
                     <p className="reunateksti">Username: {user.displayName}</p>
                     {(user.email && <p>Email: {user.email}</p>) || <p>Email: botlover@gmail.com</p>}
-                    <h3>Favourite dishes </h3>
-                    <h3>Food allergies</h3>
+                    <h3>Favourite Dishes </h3>
+                    <h3>Food Allergies/Dislikes</h3>
                     <section className='display-item reunateksti'>
                        <div className="wrapper">
                            <ul>

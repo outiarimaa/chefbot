@@ -19,8 +19,10 @@ export default class RecipeList extends React.Component {
     }
 
     handleChange_addToFavourites = (e) => {
+        e.preventDefault();
+        console.log('handlechangevittu', e.target.value);
         this.setState({
-            [e.target.title]: e.target.title
+            [e.target]: e.target
         });
     }
     handleSubmit_addToFavourites = (e) => {
@@ -105,9 +107,12 @@ export default class RecipeList extends React.Component {
 
         let hakutulos = this.state.recipesToShow.map(r =>
             <div className={'recipeDiv'}>
-                {<b>{r.title}</b>}  <form onSubmit={this.handleChange_addToFavourites}>
-                <Button className="formbutton" bsStyle="info" type={'submit'}>Add to favourites!</Button>
-            </form><br/><br/>
+                {<b>{r.title}</b>}
+                <form onSubmit={this.handleChange_addToFavourites}>
+                    <input type="hidden" name="name" defaultValue={r.title}></input>
+                    <Button className="formbutton" bsStyle="info" type={'submit'}>Add to favourites!</Button>
+                </form>
+                <br/><br/>
                 <img src={r.image} alt="pic" className={'recipeImage'}/> <br/><br/>
                 {r.extendedIngredients.length} ingredients:
                 <ul id="ingredient">
