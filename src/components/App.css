@@ -105,6 +105,7 @@
 .bg-4 {
   background: url("../resources/static/images/kukka.jpg");
   background-size: cover;
+  background-attachment: fixed;
 
 }
 
