@@ -12,39 +12,52 @@ export default class RecipeList extends React.Component {
         nameSearch: '',
         ingredientSearch: '',
 
-
-        title: '',
-        items: [],
+        currentItem: '',
+        fav: [],
         user: ''
+
     }
 
     handleChange_addToFavourites = (e) => {
-        e.preventDefault();
-        console.log('handlechangevittu', e.target.value);
+        console.log('handlechange', e.target.currentItem.value);
         this.setState({
-            [e.target]: e.target
+            [e.target.name]: e.target.value
         });
+        console.log('target.name', e.target.name);
     }
     handleSubmit_addToFavourites = (e) => {
+        console.log('handlesumbit', e.target.currentItem.value);
         e.preventDefault();
-        const itemsRef = firebase.database().ref('items');
+        const itemsRef = firebase.database().ref('fav');
         const item = {
-            title: this.state.title,
+            title: e.target.currentItem.value,
             user: this.state.user.displayName
         }
         itemsRef.push(item);
         this.setState({
-            title: '',
+            currentItem: '',
             username: ''
         });
     }
 
-
-
-
-
-
-
+    // handleChange_addToFavourites = (e) => {
+    //     console.log('handlechangevittu', e.target.favouriteRecipe.value);
+    //     this.setState({
+    //         [e.target.name]: e.target.favouriteRecipe.value
+    //     });
+    // }
+    // handleSubmit_addToFavourites = (e) => {
+    //     console.log('handlesubmit', e.target);
+    //     e.preventDefault();
+    //     const favRecipesRef = firebase.database().ref('favRecipes');
+    //     const favRecipes = {
+    //         favouriteRecipe: this.state.favouriteRecipe
+    //     }
+    //     favRecipesRef.push(favRecipes);
+    //     this.setState({
+    //         favouriteRecipe: ''
+    //     });
+    // }
 
     componentDidMount() {
         axios.get('/recipes')
@@ -52,24 +65,43 @@ export default class RecipeList extends React.Component {
                 const recipes = res.data;
                 this.setState({recipes: recipes});
             });
+        // auth.onAuthStateChanged((user) => {
+        //     if (user) {
+        //         this.setState({ user });
+        //     }
+        // });
+        // const favRecipesRef = firebase.database().ref('favRecipes');
+        // favRecipesRef.on('value', (snapshot) => {
+        //     let favRecipes = snapshot.val();
+        //     let newState = [];
+        //     for (let recipe in favRecipes) {
+        //         newState.push({
+        //             title: favRecipes[recipe].favouriteRecipe
+        //
+        //         });
+        //     }
+        //     this.setState({
+        //         favRecipes: newState
+        //     });
+        // });
         auth.onAuthStateChanged((user) => {
             if (user) {
                 this.setState({ user });
             }
         });
-        const itemsRef = firebase.database().ref('items');
+        const itemsRef = firebase.database().ref('fav');
         itemsRef.on('value', (snapshot) => {
-            let items = snapshot.val();
+            let fav = snapshot.val();
             let newState = [];
-            for (let item in items) {
+            for (let item in fav) {
                 newState.push({
                     id: item,
-                    title: items[item].title,
-                    user: items[item].user
+                    title: fav[item].title,
+                    user: fav[item].user
                 });
             }
             this.setState({
-                items: newState
+                fav: newState
             });
         });
     }
@@ -108,8 +140,8 @@ export default class RecipeList extends React.Component {
         let hakutulos = this.state.recipesToShow.map(r =>
             <div className={'recipeDiv'}>
                 {<b>{r.title}</b>}
-                <form onSubmit={this.handleChange_addToFavourites}>
-                    <input type="hidden" name="name" defaultValue={r.title}></input>
+                <form onSubmit={this.handleSubmit_addToFavourites}>
+                    <input type="hidden" name="currentItem" onChange={this.handleChange_addToFavourites} defaultValue={r.title}></input>
                     <Button className="formbutton" bsStyle="info" type={'submit'}>Add to favourites!</Button>
                 </form>
                 <br/><br/>
