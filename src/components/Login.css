@@ -3,11 +3,11 @@
 @media (min-width: 0) {
     body {
         /*background: url("../resources/static/images/covermobile.jpg");*/
-        background-color: white;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
-        border-collapse: collapse;
+        /*background-color: white;*/
+        /*background-size: cover;*/
+        /*background-attachment: fixed;*/
+        /*background-position: center;*/
+        /*border-collapse: collapse;*/
     }
     .row {
         margin:0;
