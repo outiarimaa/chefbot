@@ -55,7 +55,7 @@ export default class RecipeList extends React.Component {
                 {<b>{r.title}</b>} <br/><br/>
                 <img src={r.image} alt="pic" className={'recipeImage'}/> <br/><br/>
                 {r.extendedIngredients.length} ingredients:
-                <ul>
+                <ul id="ingredient">
                     {r.extendedIngredients.map(i => <li>{i.originalString}</li>)}
                 </ul>
                 <div>

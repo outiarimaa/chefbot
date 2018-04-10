@@ -43,13 +43,23 @@ body {
 
 .recipeLabel {
     margin-right: 10px;
-    font-size: 20px;
+    font-size: 10px;
 }
 
 .testi {
     font-size: 5px;
+    padding: 10px;
+    color: black;
 }
 
 .formbutton {
     background-color: #723779
+}
+
+.boksi2 {
+    font-size: 15px;
+}
+
+#ingredient {
+    color: black;
 }
