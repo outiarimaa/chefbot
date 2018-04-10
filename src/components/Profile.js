@@ -62,7 +62,7 @@ class Profile extends Component {
         console.log('Profiilipage', user);
         return (
             <Row id="profile">
-                <a href="http://s961.photobucket.com/user/ofwdatabasekano/media/Female%20Chef_zpseexxr0yr.gif.html" target="_blank"><img id="kuva" src="http://i961.photobucket.com/albums/ae99/ofwdatabasekano/Female%20Chef_zpseexxr0yr.gif" border="0" alt="Female Chef jobs in Australia photo Female Chef_zpseexxr0yr.gif"></img></a>
+                <a><img id="kuva" src="http://i961.photobucket.com/albums/ae99/ofwdatabasekano/Female%20Chef_zpseexxr0yr.gif" border="0" alt="Female Chef jobs in Australia photo Female Chef_zpseexxr0yr.gif"></img></a>
                 <div>
                     <h1>Profile for {user.displayName}</h1>
                     <h3>Basic information</h3>
