@@ -11,7 +11,9 @@ class Profile extends Component {
         this.state = {
             currentItem: '',
             items: [],
-            user: ''
+            user: '',
+
+            fav: [],
         }
     }
 
@@ -41,6 +43,7 @@ class Profile extends Component {
             } 
           });
         const itemsRef = firebase.database().ref('items');
+
         itemsRef.on('value', (snapshot) => {
             let items = snapshot.val();
             let newState = [];
@@ -50,16 +53,39 @@ class Profile extends Component {
                     title: items[item].title,
                     user: items[item].user
                 });
+
             }
             this.setState({
                 items: newState
             });
         });
+
+
+        const favRef = firebase.database().ref('fav');
+        favRef.on('value', (snapshot) => {
+            let fav = snapshot.val();
+            let newState = [];
+            for (let item in fav) {
+                newState.push({
+                    id: item,
+                    title: fav[item].title,
+                    user: fav[item].user
+                });
+
+            }
+            this.setState({
+                fav: newState
+            });
+        });
+
     }
+
+
+
 
     render() {
         const user = this.props.state.user;
-        console.log('Profiilipage', user);
+        console.log('Profiilipage', this.state.fav);
         return (
             <Row id="profile">
                 <a><img id="kuva" src="http://i961.photobucket.com/albums/ae99/ofwdatabasekano/Female%20Chef_zpseexxr0yr.gif" border="0" alt="Female Chef jobs in Australia photo Female Chef_zpseexxr0yr.gif"></img></a>
@@ -69,6 +95,23 @@ class Profile extends Component {
                     <p className="reunateksti">Username: {user.displayName}</p>
                     {(user.email && <p>Email: {user.email}</p>) || <p>Email: botlover@gmail.com</p>}
                     <h3>Favourite Dishes </h3>
+                    <section className='display-item reunateksti'>
+                        <div className="wrapper">
+                            <ul>
+                                {this.state.fav.map((item) => {
+
+                                    return (
+                                        <ul key={item.id}>
+                                            <li>
+                                                {item.user === this.state.user.displayName ?
+                                                    item.title : null}
+                                            </li>
+                                        </ul>
+                                    )
+                                })}
+                            </ul>
+                        </div>
+                    </section>
                     <h3>Food Allergies/Dislikes</h3>
                     <section className='display-item reunateksti'>
                        <div className="wrapper">
