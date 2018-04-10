@@ -174,7 +174,7 @@ render() {
                                     <div className="container-fluid bg-6 text-center">
                                         <h3 id="recrecipes" className="margin">Recommended recipes</h3><br/>
                                         <Recommended/>
-                                        
+
                                     </div>
                                 </div>
 
