@@ -3,13 +3,46 @@ import axios from 'axios';
 import { Button } from 'react-bootstrap';
 import './Recipelist.css'
 
+import firebase, { auth } from '../firebase.js';
+
 export default class RecipeList extends React.Component {
     state = {
         recipes: [],
         recipesToShow: [],
         nameSearch: '',
-        ingredientSearch: ''
+        ingredientSearch: '',
+
+
+        title: '',
+        items: [],
+        user: ''
     }
+
+    handleChange_addToFavourites = (e) => {
+        this.setState({
+            [e.target.title]: e.target.title
+        });
+    }
+    handleSubmit_addToFavourites = (e) => {
+        e.preventDefault();
+        const itemsRef = firebase.database().ref('items');
+        const item = {
+            title: this.state.title,
+            user: this.state.user.displayName
+        }
+        itemsRef.push(item);
+        this.setState({
+            title: '',
+            username: ''
+        });
+    }
+
+
+
+
+
+
+
 
     componentDidMount() {
         axios.get('/recipes')
@@ -17,6 +50,26 @@ export default class RecipeList extends React.Component {
                 const recipes = res.data;
                 this.setState({recipes: recipes});
             });
+        auth.onAuthStateChanged((user) => {
+            if (user) {
+                this.setState({ user });
+            }
+        });
+        const itemsRef = firebase.database().ref('items');
+        itemsRef.on('value', (snapshot) => {
+            let items = snapshot.val();
+            let newState = [];
+            for (let item in items) {
+                newState.push({
+                    id: item,
+                    title: items[item].title,
+                    user: items[item].user
+                });
+            }
+            this.setState({
+                items: newState
+            });
+        });
     }
 
     handleSubmit_searchName = (event) => {
@@ -52,7 +105,9 @@ export default class RecipeList extends React.Component {
 
         let hakutulos = this.state.recipesToShow.map(r =>
             <div className={'recipeDiv'}>
-                {<b>{r.title}</b>} <br/><br/>
+                {<b>{r.title}</b>}  <form onSubmit={this.handleChange_addToFavourites}>
+                <Button className="formbutton" bsStyle="info" type={'submit'}>Add to favourites!</Button>
+            </form><br/><br/>
                 <img src={r.image} alt="pic" className={'recipeImage'}/> <br/><br/>
                 {r.extendedIngredients.length} ingredients:
                 <ul id="ingredient">

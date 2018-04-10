@@ -68,6 +68,7 @@ class Profile extends Component {
                     <h3>Basic information</h3>
                     <p className="reunateksti">Username: {user.displayName}</p>
                     {(user.email && <p>Email: {user.email}</p>) || <p>Email: botlover@gmail.com</p>}
+                    <h3>Favourite dishes </h3>
                     <h3>Food allergies</h3>
                     <section className='display-item reunateksti'>
                        <div className="wrapper">
