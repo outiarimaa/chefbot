@@ -14,9 +14,10 @@ body {
 }
 
 .formi {
-    margin-top: 100px;
+    margin-top: 20px;
     margin-bottom: 150px;
 }
+
 
 .formi input, button{
     margin-right: 10px;
@@ -37,7 +38,8 @@ body {
 .nameLabel {
     font-family: 'Yatra One', cursive;
     margin-right: 41px;
-    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-size: 35px;
     color: #778899;
 }
 

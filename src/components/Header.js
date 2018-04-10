@@ -61,7 +61,7 @@ render() {
                             <nav class="navbar navbar-default">
                                 <div class="container">
                                     <div class="navbar-header">
-                                        <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                        <button type="button" className="navbar-toggle" data-target="#myNavbar">
                                             <span className="icon-bar"></span>
                                             <span className="icon-bar"></span>
                                             <span className="icon-bar"></span>
