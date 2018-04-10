@@ -121,11 +121,8 @@ render() {
                                             <Image src="https://images.pexels.com/photos/46247/thai-food-noodle-fried-noodles-meal-46247.jpeg?cs=srgb&dl=chopsticks-cuisine-dinner-46247.jpg&fm=jpg" circle width="200" height="120"/></a>
                                         <div id="johanna" class="collapse">
                                             <h4>Johanna<br/>
-                                            I really like<br/>
-                                                chicken Wok!<br/>
-                                            It is quick to make <br/>
-                                                and soooo delicious!
-                                            </h4>
+                                            My favorite is<br/>
+                                            chicken wok!</h4>
                                         </div>
                                     </Col>
                                     <Col xs={6} md={5}>

@@ -173,6 +173,61 @@ ul, li {
   color: black;
 }
 
+h4 {
+  font-style: italic;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+/*Kännykkä*/
+@media only screen and (max-width: 450px) {
+.wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#main-content, #sidebar-left {
+  width: 100%;
+  float: left;
+}
+
+.Chefbot-div {
+  height: 100vw;
+}
+
+.bg-2, .bg-1 {
+  display: none;
+}
+}
+/*2 Column Layout*/
+@media only screen and (min-width: 1024px) {
+  .wrap {
+    width: 1024px;
+    margin: 0;
+  }
+
+  #main-content {
+    width: 75%;
+    float: left;
+  }
+
+  #sidebar-left {
+    width: 30%;
+    float: left;
+  }
+
+}
+
+/*Wide Layout*/
+@media only screen and (min-width: 1200px) {
+  .wrap {
+    width: 1200px;
+    margin: 0;
+  }
+}
+
 
 
 
