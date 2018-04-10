@@ -81,7 +81,8 @@ render() {
                                 </div>
                             </nav>
                             <div style={ shown }>
-                                <div class="sidenav">
+                                <div className="wrap">
+                                    <div id="sidebar-left">
                                     <div className="Chefbot-div">
                                         <iframe
                                             title="chefbot"
@@ -94,7 +95,7 @@ render() {
                             </div>
                         </div>
                         <div style={ shown }>
-                            <div className="main">
+                            <div id="main-content">
                                 <div>
                                     <div class="container-fluid bg-1 text-center">
                                         <h3 id="cheftitle">CHEF<br/>BOT</h3>
@@ -172,6 +173,7 @@ render() {
 
                         </div>
                         </div>
+                        </div>
 
 
 
@@ -186,7 +188,7 @@ render() {
                     </div>
                 }
             </div>
-        </div>
+            </div>
     );
 }
 }
