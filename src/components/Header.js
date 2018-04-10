@@ -168,6 +168,24 @@ render() {
                                         <RecipeList/>
 
                                     </div>
+
+                                    <div class="container-fluid bg-6 text-center">
+                                        <h3 class="margin">Recommended recipes</h3><br/>
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <p>SALMON SASHIMI</p>
+                                                <img src="https://images.pexels.com/photos/628776/pexels-photo-628776.jpeg?cs=srgb&dl=asian-food-bowl-chopsticks-628776.jpg&fm=jpg" class="img-responsive margin" alt="Image"/>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <p>AVOCADO TOAST</p>
+                                                <img src="https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg?cs=srgb&dl=appetizer-avocado-bread-566566.jpg&fm=jpg" class="img-responsive margin" alt="Image"/>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <p>BUTTERSQUASH SOUP</p>
+                                                <img src="https://images.pexels.com/photos/539451/pexels-photo-539451.jpeg?cs=srgb&dl=appetizer-bowl-bread-539451.jpg&fm=jpg" class="img-responsive margin" alt="Image"/>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
 
