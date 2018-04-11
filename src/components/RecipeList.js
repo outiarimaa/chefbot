@@ -172,7 +172,6 @@ export default class RecipeList extends React.Component {
                         {/*<input type="text" onChange={this.handleChange_searchName} value={this.state.nameSearch}/>*/}
 
                         <Button className="formbutton" bsStyle="info" type={'submit'}>GO!</Button>
-                        <Button className="botbutton" bsStyle="info" type={'submit'}>Get from BOT!</Button>
                     </form>
                 </div>
                 <div className="boksi2">

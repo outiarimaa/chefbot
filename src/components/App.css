@@ -102,8 +102,8 @@
   /*background: url("../resources/static/images/tulips.jpeg");*/
   background-size: cover;
   background-attachment: fixed;
-    /*opacity: 0.8;*/
-    /*background-color: #D7D3D1;*/
+    opacity: 0.8;
+    background-color: whitesmoke;
   /*color: #778899;*/
     color: black;
     border-bottom: 1px solid slategrey;
@@ -118,7 +118,7 @@
   background: url("../resources/static/images/kukka.jpg");
   background-size: cover;
   background-attachment: fixed;
-  border-bottom: 1px solid lightslategrey;
+  /*border-bottom: 1px solid lightslategrey;*/
 
 }
 
@@ -259,6 +259,8 @@ h5 {
 
 .bg-6 {
   /*background-color: #778899;*/
+  opacity: 0.8;
+  background-color: whitesmoke;
 
 
 }
