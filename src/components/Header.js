@@ -11,6 +11,7 @@ import { Grid, Thumbnail, Image } from 'react-bootstrap';
 import Navibar from './Navibar';
 import { ButtonToolbar, MenuItem, DropdownButton } from 'react-bootstrap';
 import Recommended from './Recommended';
+import Favourites from './Favourites';
 
 class Header extends Component {
     constructor() {
@@ -109,15 +110,6 @@ render() {
                                         <h3 id="cheftitle">CHEF<br/>BOT</h3>
                                         </div>
 
-                                    {/*<div class="container-fluid bg-5 text-center">*/}
-                                        {/*<h2 id="whoiscb">Story of ChefBot</h2>*/}
-                                        {/*<p id="storycb">ChefBot is an intelligent chatbot, who can help <br/>*/}
-                                            {/*you to find delicious <br/>*/}
-                                            {/*recipes from a vast recipe database. <br/>*/}
-                                            {/*ChefBot is still a child and keeps on <br/>*/}
-                                            {/*learning in order to serve you better.</p>*/}
-                                    {/*</div>*/}
-
                                     <div className="container-fluid bg-6 text-center">
                                         <h3 id="recrecipes" className="margin">Recommended recipes</h3><br/>
                                         <Recommended/>
@@ -183,16 +175,7 @@ render() {
                                 </Row>
                             </Grid>
                         </div>
-                                    {/*<div class="container-fluid bg-4 text-center">*/}
-                                        {/*<RecipeList/>*/}
 
-                                    {/*</div>*/}
-
-                                    {/*<div className="container-fluid bg-6 text-center">*/}
-                                        {/*<h3 id="recrecipes" className="margin">Recommended recipes</h3><br/>*/}
-                                        {/*<Recommended/>*/}
-
-                                    {/*</div>*/}
                                 </div>
 
 
