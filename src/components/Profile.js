@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Row } from 'react-materialize';
 import firebase, { auth } from '../firebase.js';
 import './Profile.css';
-import axios from 'axios';
 import { Button } from 'react-bootstrap';
 
 class Profile extends Component {
@@ -88,7 +87,7 @@ class Profile extends Component {
         console.log('Profiilipage', this.state.fav);
         return (
             <Row id="profile">
-                <a><img id="kuva" src="http://i961.photobucket.com/albums/ae99/ofwdatabasekano/Female%20Chef_zpseexxr0yr.gif" border="0" alt="Female Chef jobs in Australia photo Female Chef_zpseexxr0yr.gif"></img></a>
+                <a><img id="kuva" src="http://i961.photobucket.com/albums/ae99/ofwdatabasekano/Female%20Chef_zpseexxr0yr.gif" border="0" alt="Female Chef"></img></a>
                 <div>
                     <h1>Profile for {user.displayName}</h1>
                     <h3>Basic Information</h3>
