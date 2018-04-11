@@ -43,6 +43,12 @@ class Header extends Component {
                 this.setState({user});
             }
         });
+        console.log('chefbotti iframe perkele', window.frames['chefbotId']);
+    }
+
+    componentDidUpdate() {
+        console.log('updateittas');
+        console.log('chefbotti iframe update', window.frames['chefbotId']);
     }
 
 render() {
@@ -86,6 +92,7 @@ render() {
                                     <div id="sidebar-left">
                                     <div className="Chefbot-div">
                                         <iframe
+                                            id="chefbotId"
                                             title="chefbot"
                                             width="90%"
                                             height="100%"
