@@ -2,8 +2,7 @@
 
 @media (min-width: 0px) {
     body {
-        background: url("../resources/static/images/rakkaus.jpg");
-        background-color: white;
+        background: url("../resources/static/images/rakkaus2.jpg");
         background-size: cover;
         background-attachment: fixed;
         background-position: center;

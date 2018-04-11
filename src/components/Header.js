@@ -67,14 +67,14 @@ render() {
                                             <span className="icon-bar"></span>
                                             <span className="icon-bar"></span>
                                         </button>
-                                        <a onClick={this.logout}>Logout</a>
+                                        <a onClick={this.logout}>LOGOUT</a>
                                     </div>
                                     <div className="collapse navbar-collapse" id="myNavbar">
                                         <ul className="nav navbar-nav navbar-right">
                                             <li>
                                                 <div>
-                                                    <div className="toggle-home-profile" style={ shown } onClick={this.toggle.bind(this)}>Profile</div>
-                                                    <div className="toggle-home-profile" style={ hidden } onClick={this.toggle.bind(this)}>Home</div>
+                                                    <div className="toggle-home-profile" style={ shown } onClick={this.toggle.bind(this)}>PROFILE</div>
+                                                    <div className="toggle-home-profile" style={ hidden } onClick={this.toggle.bind(this)}>HOME</div>
                                                 </div>
                                             </li>
                                         </ul>
@@ -111,6 +111,16 @@ render() {
                                             {/*learning in order to serve you better.</p>*/}
                                     {/*</div>*/}
 
+                                    <div className="container-fluid bg-6 text-center">
+                                        <h3 id="recrecipes" className="margin">Recommended recipes</h3><br/>
+                                        <Recommended/>
+
+                                    </div>
+
+                                    <div class="container-fluid bg-4 text-center">
+                                        <RecipeList/>
+
+                                    </div>
 
 
                         <div class="container-fluid bg-2 text-center">
@@ -166,16 +176,16 @@ render() {
                                 </Row>
                             </Grid>
                         </div>
-                                    <div class="container-fluid bg-4 text-center">
-                                        <RecipeList/>
+                                    {/*<div class="container-fluid bg-4 text-center">*/}
+                                        {/*<RecipeList/>*/}
 
-                                    </div>
+                                    {/*</div>*/}
 
-                                    <div className="container-fluid bg-6 text-center">
-                                        <h3 id="recrecipes" className="margin">Recommended recipes</h3><br/>
-                                        <Recommended/>
+                                    {/*<div className="container-fluid bg-6 text-center">*/}
+                                        {/*<h3 id="recrecipes" className="margin">Recommended recipes</h3><br/>*/}
+                                        {/*<Recommended/>*/}
 
-                                    </div>
+                                    {/*</div>*/}
                                 </div>
 
 

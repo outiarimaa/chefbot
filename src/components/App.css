@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Handlee');
 @import url('https://fonts.googleapis.com/css?family=Yatra+One');
 @import url('https://fonts.googleapis.com/css?family=Reenie+Beanie');
+@import url('https://fonts.googleapis.com/css?family=Zeyada');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 .App {
   text-align: center;
@@ -88,19 +90,20 @@
 
 .bg-1 {
   background: url("../resources/static/images/salad-2068220_1280.jpg");
-  /*background: url("../resources/static/images/rakkauskuva.jpg");*/
+  /*background: url("../resources/static/images/tomato-2780424_1280.jpg");*/
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  /*background-position: center;*/
   border-collapse: collapse;
     margin-top: 0;
 }
 
 .bg-2 {
-  background-color: #F9F9F9;
+  background-color: #778899;
+    /*opacity: 0.8;*/
     /*background-color: #D7D3D1;*/
   /*color: #778899;*/
-    color: darkslategrey;
+    color: black;
     border-bottom: 1px solid slategrey;
 }
 
@@ -118,15 +121,18 @@
 
 .toggle-home-profile {
   color: white;
+    font-family: 'Quicksand', cursive;
+    font-size: 15px;
+    cursor: pointer;
 }
 
 #cheftitle {
 font-family: 'Cabin Sketch', cursive;
   color: white;
-  font-size: 140px;
-  margin-top: 4vw;
-  margin-bottom: 4vw;
-  margin-right: 45vw;
+  font-size: 135px;
+  margin-top: 80px;
+  padding-bottom: 4vw;
+  margin-right: 42vw;
 }
 
 .sidenav {
@@ -151,10 +157,12 @@ font-family: 'Cabin Sketch', cursive;
 
 #favtitle {
   /*font-family: 'Handlee', cursive;*/
-  font-family: 'Reenie Beanie', cursive;
-  font-size: 50px;
+  /*font-family: 'Reenie Beanie', cursive;*/
+/*font-family: 'Zeyada', sans-serif;*/
+  font-size: 25px;
+  letter-spacing: 3px;
   margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .testi {
@@ -164,6 +172,7 @@ font-family: 'Cabin Sketch', cursive;
 
 .navbar, nav {
     margin-bottom: 0px;
+    margin-right: 18px;
     padding-bottom: 0px;
   background-color: #555965;
   color: white;
@@ -212,6 +221,7 @@ h5 {
   #main-content {
     width: 75%;
     float: right;
+      margin-right: 18px;
 
   }
 
@@ -224,7 +234,10 @@ h5 {
     overflow-x: hidden;
     padding: 8px 0;
     margin-top: 35px;
-      background: lightslategrey;
+      /*background: lightslategrey;*/
+      opacity: 0.9;
+      background-size: cover;
+      background-attachment: fixed;
   }
 
 }
@@ -242,7 +255,8 @@ h5 {
 }
 
 .bg-6 {
-  background-color: #778899;
+  /*background-color: #778899;*/
+
 
 }
 
@@ -269,9 +283,10 @@ h5 {
 }
 
 a {
-  color: white;
+  color: black;
   margin-bottom: 20px;
   cursor: pointer;
+  font-size: 15px;
 }
 
 
