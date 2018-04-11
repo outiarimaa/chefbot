@@ -142,22 +142,23 @@ export default class RecipeList extends React.Component {
                 {<b>{r.title}</b>}
                 <form onSubmit={this.handleSubmit_addToFavourites}>
                     <input type="hidden" name="currentItem" onChange={this.handleChange_addToFavourites} defaultValue={r.title}></input>
-                    <Button className="formbutton" bsStyle="info" type={'submit'}>Add to favourites!</Button>
+                    <br/><Button className="formbutton" bsStyle="info" type={'submit'}>Add to favourites!</Button>
                 </form>
                 <br/><br/>
                 <img src={r.image} alt="pic" className={'recipeImage'}/> <br/><br/>
-                {r.extendedIngredients.length} ingredients:
+                <div id="ingtitle"> {r.extendedIngredients.length} ingredients:</div><br/>
                 <ul id="ingredient">
-                    {r.extendedIngredients.map(i => <li key={i.originalString}>{i.originalString}</li>)}
+                    {r.extendedIngredients.map(i => <li id="ingredient" key={i.originalString}>{i.originalString}</li>)}
                 </ul>
-                <div>
+                <ol id="steps">
                     {r.analyzedInstructions[0].steps.map(steppi =>
-                        <div key={steppi.step}>
+                        <li id="smallsteps" key={steppi.step}>
                             {steppi.step}
                             <br/><br/>
-                        </div>
+                        </li>
+
                     )}
-                </div>
+                </ol>
             </div>
         )
 

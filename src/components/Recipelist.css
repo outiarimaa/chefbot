@@ -28,9 +28,11 @@ body {
     /*border: 1px solid white;*/
     margin-bottom: 30px;
     padding: 14px;
-    /*background-color: #F9F9F9;*/
-    background-color:rgba(192,192,192,0.3);
+    background-color: #F9F9F9;
+    /*background-color:rgba(192,192,192,0.3);*/
     color: black;
+    text-align: left;
+    /*font-weight: bold;*/
     /*background-color: white;*/
 }
 
@@ -77,6 +79,24 @@ input[type=text] {
 
 #ask {
     color: darkslategrey;
+}
+
+/*ul:not(.browser-default) li {*/
+    /*list-style-type: circle;*/
+/*}*/
+
+#ingredient {
+    padding-left: 15px;
+    list-style-type: circle;
+}
+
+#ingtitle {
+    font-weight: bold;
+}
+
+b, strong {
+    font-size: 25px;
+    text-align: center;
 }
 
 
