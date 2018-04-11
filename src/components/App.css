@@ -99,7 +99,9 @@
 }
 
 .bg-2 {
-  background-color: #778899;
+  /*background: url("../resources/static/images/tulips.jpeg");*/
+  background-size: cover;
+  background-attachment: fixed;
     /*opacity: 0.8;*/
     /*background-color: #D7D3D1;*/
   /*color: #778899;*/
@@ -116,6 +118,7 @@
   background: url("../resources/static/images/kukka.jpg");
   background-size: cover;
   background-attachment: fixed;
+  border-bottom: 1px solid lightslategrey;
 
 }
 
@@ -221,7 +224,7 @@ h5 {
   #main-content {
     width: 75%;
     float: right;
-      margin-right: 18px;
+      margin-right: 12px;
 
   }
 

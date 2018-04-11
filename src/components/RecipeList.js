@@ -166,7 +166,7 @@ export default class RecipeList extends React.Component {
                 <div className="boksi">
 
                     <form className="formi" onSubmit={this.handleSubmit_searchName}>
-                        <h3 id="ask">Ask<br/>ChetBot<br/> for a recipe!</h3>
+                        <h3 id="ask">Ask<br/>ChefBot<br/> for a recipe!</h3>
                         {/*<label className={'nameLabel'}>First,<br/> ask ChefBot for a recipe</label><br/>*/}
                         <input type="text" name="search" placeholder="Search for recipes!" onChange={this.handleChange_searchName} value={this.state.nameSearch}/><br/>
                         {/*<input type="text" onChange={this.handleChange_searchName} value={this.state.nameSearch}/>*/}
