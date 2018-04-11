@@ -1,17 +1,13 @@
-import React, {Component} from 'react';
-import {auth, googleProvider, facebookProvider} from '../firebase.js';
+import React, { Component } from 'react';
+import { auth } from '../firebase.js';
 import './App.css';
 import RecipeList from './RecipeList';
 import { Row, Col } from 'react-materialize';
 import Login from './Login';
-import MediaQuery from 'react-responsive';
-import ChefBot from './ChefBot.js';
 import Profile from './Profile.js';
-import { Grid, Thumbnail, Image } from 'react-bootstrap';
-import Navibar from './Navibar';
-import { ButtonToolbar, MenuItem, DropdownButton } from 'react-bootstrap';
+import { Grid, Image } from 'react-bootstrap';
 import Recommended from './Recommended';
-import Favourites from './Favourites';
+/* import Favourites from './Favourites'; */
 
 class Header extends Component {
     constructor() {
