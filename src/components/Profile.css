@@ -7,10 +7,10 @@
     border-radius: 0 0 5px 5px;
     margin-left: 15%;
     margin-right: 15%;
-    background: url("../resources/static/images/rakkauskuva.jpg");
-    background-size: cover;
+    /*background: url("../resources/static/images/rakkauskuva.jpg");*/
+    /*background-size: cover;*/
     /*background-attachment: fixed;*/
-    background-position: center;
+    /*background-position: center;*/
     border-collapse: collapse;
 }
 #kuva{
