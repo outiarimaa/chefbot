@@ -210,8 +210,17 @@ h5 {
   height: 100vw;
 }
 
-.bg-2, .bg-1 {
+.bg-2, .bg-1, .bg-6 {
   display: none;
+}
+
+.bg-4 {
+  margin-top: 10px;
+  background: none;
+}
+
+#sidebar-left {
+  margin-left: 10px;
 }
 }
 /*2 Column Layout*/
@@ -236,7 +245,6 @@ h5 {
     overflow-x: hidden;
     padding: 8px 0;
     margin-top: 35px;
-      /*background: lightslategrey;*/
       opacity: 0.9;
       background-size: cover;
       background-attachment: fixed;
