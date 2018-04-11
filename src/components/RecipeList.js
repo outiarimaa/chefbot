@@ -138,7 +138,7 @@ export default class RecipeList extends React.Component {
        /*  let lista = this.state.recipes.map(r => <div key={r.title}>{r.title}</div>) */
 
         let hakutulos = this.state.recipesToShow.map(r =>
-            <div className={'recipeDiv'}>
+            <div key={r.title} className={'recipeDiv'}>
                 {<b>{r.title}</b>}
                 <form onSubmit={this.handleSubmit_addToFavourites}>
                     <input type="hidden" name="currentItem" onChange={this.handleChange_addToFavourites} defaultValue={r.title}></input>
@@ -148,7 +148,7 @@ export default class RecipeList extends React.Component {
                 <img src={r.image} alt="pic" className={'recipeImage'}/> <br/><br/>
                 {r.extendedIngredients.length} ingredients:
                 <ul id="ingredient">
-                    {r.extendedIngredients.map(i => <li>{i.originalString}</li>)}
+                    {r.extendedIngredients.map(i => <li key={i.originalString}>{i.originalString}</li>)}
                 </ul>
                 <div>
                     {r.analyzedInstructions[0].steps.map(steppi =>

@@ -10,18 +10,18 @@ class Recommended extends Component {
 
                 <div className="row">
                     <div className="col-sm-4">
-                        <a href data-toggle="modal" data-target="#myModal">SALMON SASHIMI</a>
+                        <a data-toggle="modal" data-target="#myModal">SALMON SASHIMI</a>
                         <img
                             src="https://images.pexels.com/photos/628776/pexels-photo-628776.jpeg?cs=srgb&dl=asian-food-bowl-chopsticks-628776.jpg&fm=jpg"
-                            class="img-responsive margin" alt="Image"/>
-                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        <h4 class="modal-title">Salmon sashimi</h4>
+                            className="img-responsive margin" alt="food"/>
+                        <div className="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div className="modal-dialog" role="document">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                        <h4 className="modal-title">Salmon sashimi</h4>
                                     </div>
-                                    <div class="modal-body">
+                                    <div className="modal-body">
                                         <p><b>Ingredients</b><br/><br/>
                                             1 Sashimi grade salmon filet<br/>
                                             Pure sesame seed oil<br/>
@@ -30,8 +30,8 @@ class Recommended extends Component {
                                             Fresh pickled ginger – to garnish<br/>
                                             Watercress – to garnish</p>
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                                    <div className="modal-footer">
+                                        <button type="button" className="btn btn-default" data-dismiss="modal">Close
                                         </button>
                                     </div>
                                 </div>
@@ -40,20 +40,20 @@ class Recommended extends Component {
                         </div>
                     </div>
                     <div className="col-sm-4">
-                        <a href data-toggle="modal" data-target="#myModal2">AVOCADO TOAST</a>
+                        <a data-toggle="modal" data-target="#myModal2">AVOCADO TOAST</a>
                         <img
                             src="https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg?cs=srgb&dl=appetizer-avocado-bread-566566.jpg&fm=jpg"
-                            class="img-responsive margin" alt="Image"/>
-                        <div id="myModal2" class="modal fade" role="dialog">
-                            <div class="modal-dialog">
+                            className="img-responsive margin" alt="food"/>
+                        <div id="myModal2" className="modal fade" role="dialog">
+                            <div className="modal-dialog">
 
 
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        <h4 class="modal-title">Avocado toast</h4>
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                        <h4 className="modal-title">Avocado toast</h4>
                                     </div>
-                                    <div class="modal-body">
+                                    <div className="modal-body">
                                         <p><b>Ingredients</b><br/><br/>
                                             One 8-ounce ripe avocado, halved, pitted and peeled<br/>
                                             Fine salt and freshly ground black pepper<br/>
@@ -77,8 +77,8 @@ class Recommended extends Component {
 
                                             Copyright 2015 Television Food Network, G.P. All rights reserved</p>
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                                    <div className="modal-footer">
+                                        <button type="button" className="btn btn-default" data-dismiss="modal">Close
                                         </button>
                                     </div>
                                 </div>
@@ -87,20 +87,20 @@ class Recommended extends Component {
                         </div>
                     </div>
                     <div className="col-sm-4">
-                        <a href data-toggle="modal" data-target="#myModal3">BUTTERNUT SQUASH SOUP</a>
+                        <a data-toggle="modal" data-target="#myModal3">BUTTERNUT SQUASH SOUP</a>
                         <img
                             src="https://images.pexels.com/photos/539451/pexels-photo-539451.jpeg?cs=srgb&dl=appetizer-bowl-bread-539451.jpg&fm=jpg"
-                            class="img-responsive margin" alt="Image"/>
-                        <div id="myModal3" class="modal fade" role="dialog">
-                            <div class="modal-dialog">
+                            className="img-responsive margin" alt="food"/>
+                        <div id="myModal3" className="modal fade" role="dialog">
+                            <div className="modal-dialog">
 
 
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        <h4 class="modal-title">Butternut squash soup</h4>
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                                        <h4 className="modal-title">Butternut squash soup</h4>
                                     </div>
-                                    <div class="modal-body">
+                                    <div className="modal-body">
                                         <p><b>Ingredients</b><br/><br/>
                                             1 butternut squash, about 1kg, peeled and deseeded<br/>
                                             2 tbsp olive oil<br/>
@@ -127,8 +127,8 @@ class Recommended extends Component {
 
                                         </p>
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                                    <div className="modal-footer">
+                                        <button type="button" className="btn btn-default" data-dismiss="modal">Close
                                         </button>
                                     </div>
                                 </div>
