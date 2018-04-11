@@ -2,7 +2,7 @@
 
 @media (min-width: 0px) {
     body {
-        /*background: url("../resources/static/images/covermobile.jpg");*/
+        background: url("../resources/static/images/covermobile.jpg");
         background-color: white;
         background-size: cover;
         background-attachment: fixed;
@@ -16,7 +16,7 @@
 
 @media (min-width: 800px) {
     body {
-        /*background: url("../resources/static/images/logincover.jpg");*/
+        background: url("../resources/static/images/rakkauskuva.jpg");
         background-color: white;
         background-size: cover;
         background-attachment: fixed;
