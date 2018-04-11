@@ -22,7 +22,8 @@ class Recommended extends Component {
                                         <h4 class="modal-title">Salmon sashimi</h4>
                                     </div>
                                     <div class="modal-body">
-                                        <p>1 Sashimi grade salmon filet<br/>
+                                        <p><b>Ingredients</b><br/><br/>
+                                            1 Sashimi grade salmon filet<br/>
                                             Pure sesame seed oil<br/>
                                             Toasted sesame seeds<br/>
                                             Korean spicy sauce <br/>
@@ -53,7 +54,7 @@ class Recommended extends Component {
                                         <h4 class="modal-title">Avocado toast</h4>
                                     </div>
                                     <div class="modal-body">
-                                        <p>Ingredients<br/><br/>
+                                        <p><b>Ingredients</b><br/><br/>
                                             One 8-ounce ripe avocado, halved, pitted and peeled<br/>
                                             Fine salt and freshly ground black pepper<br/>
                                             4 slices whole grain or whole wheat bread<br/>
@@ -61,7 +62,8 @@ class Recommended extends Component {
                                             2 tablespoons extra-virgin olive oil or unsalted butter, softened<br/>
                                             Flaky sea salt, for serving<br/>
                                             Crushed red pepper flakes, optional<br/><br/>
-                                            Directions<br/><br/>
+
+                                            <b>Directions</b><br/><br/>
                                             Mash the avocado with a fork in a shallow bowl until chunky. Season with
                                             fine salt and black pepper.<br/>
 
@@ -99,14 +101,31 @@ class Recommended extends Component {
                                         <h4 class="modal-title">Butternut squash soup</h4>
                                     </div>
                                     <div class="modal-body">
-                                        <p>1 butternut squash, about 1kg, peeled and deseeded<br/>
+                                        <p><b>Ingredients</b><br/><br/>
+                                            1 butternut squash, about 1kg, peeled and deseeded<br/>
                                             2 tbsp olive oil<br/>
                                             1 tbsp butter<br/>
                                             2 onions, diced<br/>
                                             1 garlic clove, thinly sliced<br/>
                                             2 mild red chillies, deseeded and finely chopped<br/>
                                             850ml hot vegetable stock<br/>
-                                            4 tbsp crème fraîche, plus more to serve</p>
+                                            4 tbsp crème fraîche, plus more to serve<br/><br/>
+
+                                            <b>Directions</b><br/><br/>
+                                            Heat oven to 200C/180C fan/gas 6. Cut the squash into large cubes, about 4cm/1½in across, <br/>
+                                            then toss in a large roasting tin with half the olive oil. Roast for 30 mins, turning once <br/>
+                                            during cooking, until golden and soft.<br/><br/>
+
+                                            While the squash cooks, melt the butter with the remaining oil in a large saucepan, then <br/>
+                                            add the onions, garlic and ¾ of the chilli. Cover and cook on a very low heat for 15-20 mins <br/>
+                                            until the onions are completely soft.<br/><br/>
+
+                                            Tip the squash into the pan, add the stock and the crème fraîche, then whizz with a stick <br/>
+                                            blender until smooth. For a really silky soup, put the soup into a liquidiser and blitz it in batches. <br/>
+                                            Return to the pan, gently reheat, then season to taste. Serve the soup in bowls with swirls of crème fraîche <br/>
+                                            and a scattering of the remaining chopped chilli.
+
+                                        </p>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-default" data-dismiss="modal">Close
@@ -123,5 +142,6 @@ class Recommended extends Component {
         );
     }
 }
+
 
 export default Recommended;

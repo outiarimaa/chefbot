@@ -87,15 +87,20 @@
 
 .bg-1 {
   background: url("../resources/static/images/salad-2068220_1280.jpg");
+  /*background: url("../resources/static/images/rakkauskuva.jpg");*/
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   border-collapse: collapse;
+    margin-top: 0;
 }
 
 .bg-2 {
-  background-color: #F9F9F9; /* Dark Blue */
-  color: #778899;
+  background-color: #F9F9F9;
+    /*background-color: #D7D3D1;*/
+  /*color: #778899;*/
+    color: darkslategrey;
+    border-bottom: 1px solid slategrey;
 }
 
 .bg-5 {
@@ -133,6 +138,7 @@ font-family: 'Cabin Sketch', cursive;
   overflow-x: hidden;
   padding: 8px 0;
   margin-top: 35px;
+    background-color: white;
 }
 
 .sidenav a {
@@ -167,8 +173,11 @@ font-family: 'Cabin Sketch', cursive;
 
 
 .navbar, nav {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
   background-color: #555965;
   color: white;
+
 }
 
 ul, li {
@@ -262,6 +271,11 @@ h5 {
 
 .modal.open {
   overflow: hidden;
+}
+
+.modal {
+  width: 38%;
+  background: none;
 }
 
 a {
